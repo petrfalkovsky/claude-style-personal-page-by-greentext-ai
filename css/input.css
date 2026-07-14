@@ -1,0 +1,84 @@
+/* ---------- chips ---------- */
+.chips {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px clamp(14px, 2.4vw, 22px);
+  border-top: 1px solid var(--line-soft);
+  background: rgba(0,0,0,0.16);
+}
+.chip {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 13px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background .15s ease, transform .08s ease;
+}
+.chip:hover { color: var(--accent-bri); border-color: var(--accent-line); background: var(--accent-soft); }
+.chip:active { transform: translateY(1px); }
+.chip:focus-visible { outline: 2px solid var(--accent-line); outline-offset: 2px; }
+
+/* ---------- composer ---------- */
+.composer {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px clamp(14px, 2.4vw, 22px);
+  border-top: 1px solid var(--line);
+  background: rgba(0,0,0,0.28);
+}
+.composer-prompt { color: var(--accent); font-size: 15px; }
+.composer-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 14.5px;
+  caret-color: var(--accent);
+}
+.composer-input::placeholder { color: var(--text-faint); }
+.composer-hint { color: var(--text-faint); font-size: 11.5px; white-space: nowrap; }
+
+/* --- language switcher (titlebar) --- */
+.langbar { display: flex; gap: 4px; margin-left: 10px; }
+.lang-btn {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  background: transparent;
+  border: 1px solid var(--line-soft);
+  border-radius: 7px;
+  padding: 3px 7px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.lang-btn:hover { color: var(--text-dim); border-color: var(--line); }
+.lang-btn.active { color: var(--accent); border-color: var(--accent-line); }
+
+/* Выпадашка языков: одна кнопка текущего языка, остальные — в меню. */
+.lang-dd { position: relative; }
+.lang-dd-toggle { white-space: nowrap; }
+.lang-dd-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 30;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px;
+  background: var(--bg, #1a1917);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.lang-dd.open .lang-dd-menu { display: flex; }
+.lang-dd-item { width: 100%; }

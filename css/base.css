@@ -1,0 +1,71 @@
+/* =========================================================================
+   Peter Parker — terminal portfolio
+   Theme: warm dark terminal, single accent (Claude coral). Full monospace.
+   ========================================================================= */
+
+:root {
+  --bg:          #16150f;
+  --bg-2:        #1a1917;
+  --panel:       #201f1c;
+  --panel-2:     #26241f;
+  --line:        rgba(236, 233, 224, 0.10);
+  --line-soft:   rgba(236, 233, 224, 0.06);
+
+  --text:        #ece9e0;
+  --text-dim:    #a8a299;
+  --text-faint:  #75716a;
+
+  --accent:      #d97757;   /* Claude coral, the only accent */
+  --accent-bri:  #e8916f;
+  --accent-soft: rgba(217, 119, 87, 0.14);
+  --accent-line: rgba(217, 119, 87, 0.34);
+
+  --cream:       #efece3;   /* portrait tile, echoes Claude's light surface */
+  --ink:         #1a1815;
+
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code",
+          "Menlo", "Consolas", "Liberation Mono", monospace;
+
+  --radius: 14px;
+  --maxw: 980px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--mono);
+  color: var(--text);
+  background:
+    radial-gradient(1100px 620px at 78% -8%, rgba(217, 119, 87, 0.10), transparent 60%),
+    radial-gradient(900px 700px at 10% 110%, rgba(217, 119, 87, 0.05), transparent 60%),
+    var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* faint scanline / grain layer, fixed and inert */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  background-image: repeating-linear-gradient(
+    0deg, rgba(255, 255, 255, 0.015) 0 1px, transparent 1px 3px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+.stage {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: clamp(10px, 2.4vw, 30px);
+}

@@ -1,0 +1,42 @@
+/* ---------- responsive ---------- */
+@media (max-width: 720px) {
+  .terminal { height: min(90dvh, 760px); }
+  .screen { font-size: 13px; }
+  .neofetch { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 18px; }
+  .nf-rows { text-align: left; }
+  .nf-rule { display: none; }
+  .tl-item { grid-template-columns: 40px 1fr; gap: 12px; }
+  .tl-item .tl-when { grid-column: 2; padding-top: 0; order: 2; }
+  .tl-item .tl-logo { grid-row: span 2; }
+  .tl-item .tl-body { grid-column: 2; order: 1; }
+  .tl-logo { width: 40px; height: 40px; }
+  .ptable a.prow, .ptable .prow { grid-template-columns: 1fr; gap: 3px; }
+  .prow .p-go { display: none; }
+  .m-grid { grid-template-columns: repeat(2, 1fr); }
+  .kv-row { grid-template-columns: 1fr; }
+  .kv-k { border-right: none; border-bottom: 1px solid var(--line-soft); }
+  .help-grid { grid-template-columns: 1fr; }
+  .help-grid .help-row:nth-child(odd) { border-right: none; }
+  .composer-hint { display: none; }
+  .titlebar-name { font-size: 11px; }
+}
+
+@media (max-width: 420px) {
+  .m-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  .resp .reveal, .resp .reveal > .sigil, .resp .reveal .w, .resp .reveal .tok-media { opacity: 1; transform: none; }
+  .ascii, .banner { opacity: 1; transform: none; }
+  .cmd-line .cmd .cursor { animation: none; }
+}
+
+/* ---------- мобильные: titlebar переносится на две строки ---------- */
+@media (max-width: 720px) {
+  .titlebar { flex-wrap: wrap; height: auto; min-height: 46px; padding: 8px 12px; row-gap: 6px; }
+  .titlebar-name { flex: 1 1 auto; min-width: 0; }
+  .titlebar-links { flex-wrap: wrap; row-gap: 6px; }
+  .langbar { margin-left: auto; }
+}
