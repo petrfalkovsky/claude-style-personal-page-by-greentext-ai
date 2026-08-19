@@ -16,6 +16,8 @@
     jewbuzz:   "https://play.google.com/store/apps/details?id=com.it.jewbuzz_love",
     grand:     "https://grnd.game",
     gapopa:    "https://gapopa.com",
+    walter:    "https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138",
+    walterGP:  "https://play.google.com/store/apps/details?id=com.walterwrites&hl=en",
     whatsapp:  "https://wa.me/541127667104",
   };
 
