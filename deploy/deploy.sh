@@ -24,6 +24,10 @@ rsync -a \
 # ?v=3 → ?v=20260818… во всех ссылках на css/js
 sed -i '' -E "s/\?v=[A-Za-z0-9._-]+/?v=$STAMP/g" "$STAGE/index.html"
 
+# Картинки грузятся из js по константному пути — версионируем и их, иначе
+# старое фото останется в кэше Cloudflare на неделю.
+sed -i '' -E "s#(assets/[A-Za-z0-9._-]+\.(jpg|jpeg|png|svg|webp))(\?v=[A-Za-z0-9]+)?#\1?v=$STAMP#g" "$STAGE"/js/*.js
+
 rsync -az --delete -e ssh "$STAGE/" "$HOST:$DEST"
 
 echo "выкачено, версия статики: $STAMP"
