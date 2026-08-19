@@ -172,7 +172,7 @@ window.LOCALES.ru = {
       ["github", `<a href="{github}" target="_blank" rel="noopener noreferrer">github.com/petrfalkovsky ↗</a>`],
       ["whatsapp", `<a href="{whatsapp}" target="_blank" rel="noopener noreferrer">+54 11 2766-7104 ↗</a>`],
       ["сайт", `<a href="{greentext}" target="_blank" rel="noopener noreferrer">greentext.ai ↗</a>`],
-      ["где", "<b>Буэнос-Айрес, Аргентина</b> · удалёнка / готов к релокации"],
+      ["где", "<b>Буэнос-Айрес, Аргентина</b> · удалёнка"],
       ["языки", "Русский (родной) · Английский (B2+) · Испанский (B1+)"],
     ],
   },

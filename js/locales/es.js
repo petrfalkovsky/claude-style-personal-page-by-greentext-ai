@@ -172,7 +172,7 @@ window.LOCALES.es = {
       ["github", `<a href="{github}" target="_blank" rel="noopener noreferrer">github.com/petrfalkovsky ↗</a>`],
       ["whatsapp", `<a href="{whatsapp}" target="_blank" rel="noopener noreferrer">+54 11 2766-7104 ↗</a>`],
       ["sitio", `<a href="{greentext}" target="_blank" rel="noopener noreferrer">greentext.ai ↗</a>`],
-      ["ubicación", "<b>Buenos Aires, Argentina</b> · remoto / abierto a reubicación"],
+      ["ubicación", "<b>Buenos Aires, Argentina</b> · remoto"],
       ["idiomas", "Ruso (nativo) · Inglés (B2+) · Español (B1+)"],
     ],
   },
