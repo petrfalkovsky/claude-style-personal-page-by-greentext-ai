@@ -9,7 +9,7 @@
   position: relative;
   width: clamp(168px, 22vw, 224px);
   aspect-ratio: 1 / 1;
-  background: var(--cream);
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.22)), var(--panel);
   border-radius: 12px;
   padding: 10px;
   border: 1px solid rgba(0,0,0,0.35);
@@ -19,7 +19,7 @@
 .portrait-frame .ptag {
   position: absolute; left: 10px; bottom: 10px;
   font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase;
-  color: rgba(26,24,21,0.55); background: rgba(239,236,227,0.7);
+  color: var(--text-faint); background: rgba(0,0,0,0.35);
   padding: 2px 6px; border-radius: 4px;
 }
 
