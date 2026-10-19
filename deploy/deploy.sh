@@ -28,6 +28,9 @@ sed -i '' -E "s/\?v=[A-Za-z0-9._-]+/?v=$STAMP/g" "$STAGE/index.html"
 # старое фото останется в кэше Cloudflare на неделю.
 sed -i '' -E "s#(assets/[A-Za-z0-9._-]+\.(jpg|jpeg|png|svg|webp))(\?v=[A-Za-z0-9]+)?#\1?v=$STAMP#g" "$STAGE"/js/*.js
 
+# То же для резюме: PDF лежит на edge до недели, без штампа скачивается старое.
+sed -i '' -E "s#(cv/[A-Za-z0-9._-]+\.pdf)(\?v=[A-Za-z0-9]+)?#\1?v=$STAMP#g" "$STAGE"/js/*.js "$STAGE"/js/locales/*.js
+
 rsync -az --delete -e ssh "$STAGE/" "$HOST:$DEST"
 
 echo "выкачено, версия статики: $STAMP"
