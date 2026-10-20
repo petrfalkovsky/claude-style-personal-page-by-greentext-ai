@@ -19,6 +19,9 @@
   p { margin: 3pt 0; }
   u.lead { text-decoration: underline; }
   ol { margin: 1pt 0 4pt; padding-left: 18pt; }
+  .desc { margin: 2pt 0 2pt; }
+  ul.meta { list-style: '– '; margin: 1pt 0 2pt; }
+  .stack { margin: 2pt 0 4pt; }
 </style>
 </head>
 <body>
@@ -38,74 +41,153 @@
 
 <h3>UX Expert - Software - Mercado Pago — jul 2025 — actualidad | MercadoLibre, Inc., Buenos Aires</h3>
 <p class="sub">Comercio electrónico y fintech en América Latina</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> diseñé la experiencia de usuario y el diseño de interacción de los flujos de pagos y perfil de Mercado Pago y los transformé yo mismo en código de producción estable: del user flow y el prototipo en Figma a componentes del sistema de diseño en HTML, CSS, TypeScript y frameworks de componentes (React, Flutter); design tokens, estados de carga y error, soporte offline, accesibilidad (contraste, foco, lectores de pantalla) y rendimiento como criterios de aceptación.</li>
-  <li><u class="lead">Corregí estos bugs:</u> desajustes entre el diseño y el código, regresiones en componentes del sistema de diseño, problemas de accesibilidad y de velocidad de renderizado, flujos de red inestables y sincronización incorrecta de estado detectada por Firebase Crashlytics; publiqué actualizaciones de producción vía CI/CD.</li>
-  <li><u class="lead">IA generativa y flujos agénticos:</u> integré la IA generativa en el ciclo «diseño → código»: generación de variantes de interfaz a partir de los tokens del sistema de diseño, revisión con IA de la maquetación frente al diseño y la accesibilidad, generación de tests de UI. Configuré y evalué flujos de trabajo agénticos —contexto, herramientas, instrucciones y límites de seguridad— para herramientas internas de sellers y la app de logística para repartidores.</li>
+<p class="desc">Diseño y desarrollo de los flujos de pagos y perfil de Mercado Pago: del user flow y el prototipo en Figma a componentes del sistema de diseño en producción. Herramientas internas para sellers y app de logística para repartidores.</p>
+<ul class="meta">
+  <li>empresa: más de 80.000 empleados, e-commerce y fintech en 18 países de América Latina</li>
 </ul>
+<ul>
+  <li>diseñé la experiencia y la interacción y transformé yo mismo las decisiones en código de producción estable: componentes del sistema de diseño en HTML, CSS, TypeScript, React y Flutter, design tokens, estados de carga, error y offline</li>
+  <li>mantuve la accesibilidad (contraste, foco, lectores de pantalla) y el rendimiento como criterios de aceptación; corregí desajustes entre diseño y código, regresiones de componentes y fallos detectados por Firebase Crashlytics</li>
+  <li>integré la IA generativa en el ciclo diseño → código: variantes de interfaz a partir de design tokens, revisión con IA de la maquetación frente al diseño y la accesibilidad, generación de tests de UI</li>
+  <li>configuré y evalué flujos de trabajo agénticos —contexto, herramientas, instrucciones y límites de seguridad— para herramientas de sellers</li>
+  <li>publiqué actualizaciones de producción vía CI/CD</li>
+</ul>
+<p class="stack"><b>Stack:</b> HTML · CSS · JavaScript · TypeScript · React · Flutter · Dart · Figma · Design Systems · Design Tokens · WCAG · Firebase Crashlytics · CI/CD · Claude Code · MCP</p>
+
+<h3>Co-Founder / Lead Engineer — jul 2026 — actualidad | 20mm, Moscú, remoto</h3>
+<p class="sub">CRM de presupuestos para piezas de piedra: del plano del diseñador al presupuesto, despiece de placas, taller y recepción</p>
+<p class="desc">El gestor obtiene un presupuesto con despiece de placas en minutos en lugar de horas: plano (PDF, foto, escaneo, DXF) → piezas → juntas → despiece → servicios y precio → presupuesto, contrato y enlace de invitado para el cliente. Catálogo de 1.670 piedras, pantalla de taller, recepción con firma del cliente en el móvil. Beta 1.0 en Flutter, versión 2.0 en Next.js. <a href="https://20-mm.ru">20-mm.ru</a></p>
+<ul class="meta">
+  <li>equipo: 1 ingeniero + agentes de IA</li>
+  <li>empresa: interiores de piedra llave en mano para estudios de diseño de Moscú, facturación de 7–9 M RUB al mes</li>
+</ul>
+<ul>
+  <li>diseñé los límites de la IA: el modelo solo lee el plano y redacta, el dinero lo calcula un motor determinista — la cifra del presupuesto es la misma en cada ejecución</li>
+  <li>los límites del modelo los impone el código, no el prompt: verificación del tema antes de la llamada, timeout, validación de la respuesta por esquema, fallback a reglas, tope mensual de gasto en IA</li>
+  <li>lectura de planos en el servidor (Gemini), asistente que edita el cálculo por texto y voz (DeepSeek), servidor MCP por el que Claude envía el despiece al cálculo con una clave personal</li>
+  <li>validé el motor contra los cálculos manuales del gestor en pedidos reales; más de 150 escenarios de Playwright siguen el mismo camino que el usuario en pantalla</li>
+  <li>un único sistema de diseño para web y Flutter generado desde un solo archivo de tokens (Apple HIG, Liquid Glass), esquemas claro y oscuro; interfaz en 14 idiomas</li>
+  <li>infraestructura: prod y staging en un servidor en Moscú (Docker Compose, nginx, Let’s Encrypt), salida a APIs de IA extranjeras por Tailscale, backups nocturnos con restauración probada; gestioné un incidente de seguridad, roté las claves y agregué monitoreo</li>
+</ul>
+<p class="stack"><b>Stack:</b> Next.js · React · TypeScript · Tailwind · Three.js · Zod · next-intl · PostgreSQL · Go · Flutter · Docker Compose · nginx · Tailscale · Cloudflare · Playwright · MCP · Gemini · DeepSeek · Claude</p>
 
 <h3>Flutter Developer (Founder) — abr 2026 — actualidad | Greentext AI Inc., Argentina–EE. UU., remoto</h3>
 <p class="sub">Humanizador y detector de texto con IA</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> construí el producto de punta a punta: app Flutter (Web, iOS, Android) con autenticación, planes de suscripción y panel de administración; backend en Go (REST API, PostgreSQL, Redis); entrené un detector ML propio (RoBERTa fine-tuned) que supera a competidores como Sapling y Winston.</li>
-  <li><u class="lead">Corregí estos bugs:</u> brechas de anti-abuso y fingerprinting, casos límite de facturación (webhooks de Stripe, metered overage), desajustes de atribución entre clics de anuncios y compras, y fiabilidad de la infraestructura en staging/prod.</li>
-  <li>Probá la app en <a href="https://greentext.ai">greentext.ai</a></li>
+<p class="desc">Mi propio SaaS con usuarios de pago: investigué el mercado, constituí la empresa en Delaware, construí todo el producto y llevo el growth. Una sola app Flutter cubre Web, iOS y Android. <a href="https://greentext.ai">greentext.ai</a></p>
+<ul class="meta">
+  <li>equipo: 1 ingeniero + agentes de IA</li>
+  <li>empresa: Greentext AI Inc., Delaware C-corp</li>
 </ul>
+<ul>
+  <li>construí la app Flutter (Web, iOS, Android) con autenticación, planes de suscripción y panel de administración, y el backend en Go (REST API, PostgreSQL, Redis)</li>
+  <li>entrené un detector ML propio (RoBERTa fine-tuned) que supera a competidores como Sapling y Winston</li>
+  <li>implementé la facturación con Stripe: suscripciones, metered overage, webhooks, idempotencia</li>
+  <li>cerré brechas de anti-abuso y fingerprinting y desajustes de atribución entre clics de anuncios y compras; mantuve la fiabilidad de staging/prod</li>
+</ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · Go · PostgreSQL · Redis · Next.js · PyTorch · RoBERTa · Stripe · AWS · Docker · GitHub Actions · Cloudflare · Sentry · GA4 · GTM</p>
 
 <h3>Lead Mobile Developer — oct 2025 — jun 2026 | Greentext AI Inc., EE. UU., remoto · proyecto Walter Writes AI</h3>
 <p class="sub">Humanizador y detector de texto con IA para Walter IA Inc. (EE. UU.), iOS y Android, $1.2M MRR</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> armé y lideré el equipo, arquitectura y code review; apps Flutter para iOS y Android: humanizador, detector de IA con puntuación por fragmentos, historial con caché offline (Hive), 10 idiomas, inicio de sesión con email, Google, Facebook y Apple, suscripciones In-App Purchase de Apple/Google con verificación en el servidor, Cloudflare Turnstile, chat de soporte; ciclo de releases en App Store y Google Play.</li>
-  <li><u class="lead">Corregí estos bugs:</u> casos límite de suscripciones (restauración de compras, webhooks duplicados de Apple, desfase del estado del plan), assets y claves de localización sin uso (escribí utilidades de verificación), confusión entre entornos preprod/staging/prod — los secretos quedaron fuera del repositorio.</li>
-  <li><u class="lead">Desarrollo con IA:</u> ciclo test-driven con el agente según las recomendaciones de Anthropic: primero los tests a partir del contrato OpenAPI, el agente confirma que fallan y solo entonces escribe la implementación hasta que pasan; tests unitarios y de bloc sobre modelos, servicios y cada funcionalidad como capa de verificación que el agente no puede «convencer»; referencias (Apple IAP, Walter API) en el repositorio como contexto para el agente en lugar de suposiciones; el agente no ve las claves de producción. <a href="https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.walterwrites">Google Play</a></li>
+<p class="desc">Apps móviles de humanizador y detector de IA para un cliente de EE. UU.: historial con caché offline, 10 idiomas, inicio de sesión con email, Google, Facebook y Apple, suscripciones de Apple/Google con verificación en el servidor. <a href="https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.walterwrites">Google Play</a></p>
+<ul class="meta">
+  <li>equipo: 3 desarrolladores Flutter, lo armé y lo lideré</li>
+  <li>cliente: Walter IA Inc., EE. UU.</li>
 </ul>
+<ul>
+  <li>armé el equipo, me encargué de la arquitectura, el code review y el ciclo de releases en App Store y Google Play</li>
+  <li>establecí un ciclo test-driven con el agente de IA según las recomendaciones de Anthropic: primero los tests a partir del contrato OpenAPI, el agente confirma que fallan y solo entonces escribe la implementación hasta que pasan</li>
+  <li>tests unitarios y de bloc sobre modelos, servicios y cada funcionalidad — una capa de verificación que el agente no puede «convencer»; las referencias de Apple IAP y Walter API viven en el repositorio como contexto para el agente</li>
+  <li>resolví casos límite de suscripciones: restauración de compras, webhooks duplicados de Apple, desfase del estado del plan</li>
+  <li>separé los entornos preprod/staging/prod y saqué los secretos del repositorio — el agente no ve las claves de producción; escribí utilidades que detectan assets y claves de localización sin uso</li>
+</ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · Bloc · GoRouter · Dio · Hive · In-App Purchase · Firebase Crashlytics · Firebase Analytics · Google / Facebook / Apple Sign-In · Cloudflare Turnstile · OpenAPI · Mockito · bloc_test · Claude Code</p>
 
 <h3>Flutter Developer — ene 2026 — jun 2026 | Greentext AI Inc., EE. UU., remoto · proyecto Erlesen</h3>
 <p class="sub">Erlesen — Kurzgeschichten: lector de cuentos para el mercado alemán, iOS y Android</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> modo de lectura con progreso y modo enfoque, versiones en audio con reproducción en segundo plano, marcadores y favoritos, páginas de autores, biblioteca offline (Drift), suscripciones y prueba anticipada (RevenueCat), donaciones, Firebase Auth, Firestore, Remote Config y notificaciones push, deep links, formulario de feedback, localización.</li>
-  <li><u class="lead">Corregí estos bugs:</u> pérdida del progreso de lectura entre sesiones y dispositivos, fallos del audio en segundo plano, desfase del estado de la suscripción tras la compra, maquetación en pantallas pequeñas.</li>
-  <li><u class="lead">Desarrollo con IA:</u> ingeniería de contexto: CLAUDE.md con las reglas del proyecto y un grafo de conocimiento del código vía MCP — el agente primero revisa el radio de impacto del cambio, los flujos afectados y la cobertura de tests, y recién después edita; ciclo explore → plan → code → verify; el diff pasa una revisión aparte con puntuación de riesgo antes de mi aceptación. <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a></li>
+<p class="desc">Lectura de cuentos con progreso y modo enfoque, versiones en audio con reproducción en segundo plano, marcadores, favoritos, páginas de autores, biblioteca offline, suscripciones y prueba anticipada. <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a></p>
+<ul class="meta">
+  <li>equipo: 2 desarrolladores Flutter</li>
+  <li>empresa: Greentext AI Inc.</li>
 </ul>
-
-<h3>Flutter Developer — oct 2025 — ene 2026 | Greentext AI Inc., EE. UU., remoto · proyecto AI Cleaner</h3>
-<p class="sub">AI Clean Up — utilidad de limpieza de la galería para iOS</p>
 <ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> detección de fotos similares (perceptual hash, DCT), borrosas (varianza del Laplaciano + Apple Vision), duplicados y ráfagas, Live Photos, grabaciones de pantalla y videos pesados; componentes nativos de iOS 26 vía Platform Views y puente a Swift con Pigeon; modo swipe para revisar; suscripciones (Apphud), atribución (AppsFlyer), App Tracking Transparency.</li>
-  <li><u class="lead">Corregí estos bugs:</u> escaneo lento de bibliotecas grandes (procesamiento en segundo plano con pausa y reanudación), consumo creciente de memoria en miniaturas, falsos positivos entre fotos similares.</li>
-  <li><u class="lead">Desarrollo con IA:</u> enfoque spec-driven: la especificación técnica y las fases de desarrollo son el contrato para el agente; el agente hace commits con un autor de git propio (46 de 72 commits), así cada cambio suyo es trazable y reversible; yo acepto cada fase con un checklist de pruebas de Vision en un dispositivo real; la publicación en la tienda la hace solo una persona. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></li>
+  <li>armé la ingeniería de contexto para el agente de IA: reglas del proyecto en CLAUDE.md y un grafo de conocimiento del código vía MCP — el agente primero revisa el radio de impacto del cambio, los flujos afectados y la cobertura de tests, y recién después edita</li>
+  <li>trabajé con el ciclo explore → plan → code → verify; cada diff pasa una revisión aparte con puntuación de riesgo antes de mi aceptación</li>
+  <li>corregí la pérdida del progreso de lectura entre sesiones y dispositivos, fallos del audio en segundo plano, desfase del estado de la suscripción tras la compra</li>
+  <li>publiqué releases y actualizaciones</li>
 </ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · Bloc · GoRouter · Drift · Firebase Auth · Firestore · Remote Config · FCM · RevenueCat · just_audio · audio_service · Airtable · gen-l10n · MCP · Claude Code</p>
 
 <h3>Flutter Developer — mar 2025 — jun 2026 | Greentext AI Inc., EE. UU., remoto · proyecto JewBuzz Love</h3>
 <p class="sub">App de citas para la comunidad judía, iOS y Android; decenas de miles de MAU, expansión en LATAM</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> como parte del equipo: chats en tiempo real (Amity SDK, Socket.IO, MQTT, Pusher), modos de descubrimiento (mapa, ruleta, cita a ciegas), likes y favoritos, compras in-app, deep links, notificaciones push, geolocalización, builds dev/preprod/prod con proyectos de Firebase separados, analítica (Amplitude, Customer.io).</li>
-  <li><u class="lead">Corregí estos bugs:</u> pérdida de mensajes al reconectar el socket, notificaciones push duplicadas, crashes detectados por Firebase Crashlytics, diferencias entre entornos.</li>
-  <li><u class="lead">Desarrollo con IA:</u> agentes sobre una base de código grande y ajena: primero exploración en modo solo lectura y un plan, los cambios en PRs pequeños con la revisión habitual del equipo; esquema orchestrator-workers con subagentes en paralelo por módulo; gate automático (flutter analyze, build de todos los flavors) antes de que una persona vea el cambio. <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></li>
+<p class="desc">Citas con chats en tiempo real, modos de descubrimiento (mapa, ruleta, cita a ciegas), likes y favoritos, compras in-app, deep links, notificaciones push y geolocalización. <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></p>
+<ul class="meta">
+  <li>equipo: 2 desarrolladores Flutter</li>
+  <li>empresa: Greentext AI Inc.</li>
 </ul>
+<ul>
+  <li>usé agentes de IA sobre una base de código grande y ajena: primero exploración en modo solo lectura y un plan, los cambios en PRs pequeños con la revisión habitual del equipo</li>
+  <li>esquema orchestrator-workers: subagentes en paralelo por módulo; gate automático (flutter analyze, build de todos los flavors) antes de que una persona vea el cambio</li>
+  <li>mantuve los builds dev/preprod/prod con proyectos de Firebase separados</li>
+  <li>corregí la pérdida de mensajes al reconectar el socket, notificaciones push duplicadas, crashes detectados por Firebase Crashlytics</li>
+</ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · Bloc · GoRouter · Dio · Amity SDK · Socket.IO · MQTT · Pusher · Firebase Messaging · Crashlytics · Google Maps · In-App Purchase · Amplitude · Customer.io · easy_localization · Claude Code</p>
 
-<h3>Flutter Developer — sep 2024 — jul 2025 | Grand Mobile (Dynamic Technologies), Argentina, remoto, 4M MAU</h3>
-<p class="sub">Juego de rol móvil, simulador de vida</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> desarrollé desde cero más de 30 interfaces únicas a partir de diseños en Figma, conecté la aplicación al backend, escribí la lógica de cliente de más de 40 módulos del juego y entregué nuevas funcionalidades de gameplay a diario.</li>
-  <li><u class="lead">Corregí estos bugs:</u> elementos de UI rotos, sincronización incorrecta del estado del juego, operaciones de red inestables y numerosos problemas menores de gameplay.</li>
-  <li>Disponible en las tiendas para iOS.</li>
+<h3>Flutter Developer — oct 2025 — ene 2026 | Greentext AI Inc., EE. UU., remoto · proyecto AI Cleaner</h3>
+<p class="sub">AI Clean Up — utilidad de limpieza de la galería para iOS</p>
+<p class="desc">Encuentra fotos similares y borrosas, duplicados y ráfagas, Live Photos, grabaciones de pantalla y videos pesados; modo swipe para revisar, suscripciones. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></p>
+<ul class="meta">
+  <li>equipo: 1 desarrollador + agente de IA</li>
+  <li>empresa: Greentext AI Inc.</li>
 </ul>
+<ul>
+  <li>desarrollo spec-driven: la especificación técnica y las fases son el contrato del agente de IA; el agente hace commits con su propio autor de git (46 de 72 commits), así cada cambio suyo es trazable y reversible</li>
+  <li>acepté cada fase con un checklist de pruebas de Vision en un dispositivo real; la publicación en la tienda la hace solo una persona</li>
+  <li>implementé perceptual hash (DCT) para fotos similares y varianza del Laplaciano + Apple Vision para las borrosas</li>
+  <li>construí componentes nativos de iOS 26 vía Platform Views y un puente a Swift con Pigeon</li>
+  <li>aceleré el escaneo de bibliotecas grandes (procesamiento en segundo plano con pausa y reanudación), eliminé el crecimiento de memoria en miniaturas</li>
+</ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · Swift · Pigeon · Platform Views · Apple Vision · photo_manager · Bloc · hydrated_bloc · get_it · injectable · freezed · auto_route · Apphud · AppsFlyer · ATT · Claude Code</p>
 
-<h3>Flutter Developer — feb 2024 — feb 2025 | TN-GROUP, Europa, remoto, 30–70 MAU</h3>
-<p class="sub">B2B, Field Service Management (FSM): gestión de servicio de campo y control de calidad en el sector agroindustrial</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> nuevos campos con guardado en almacenamiento local; corregí el consumo acelerado de batería en Android antiguos al verificar la conexión a internet, crashes al enviar un archivo al servidor y muchos, muchos otros bugs a diario.</li>
-  <li><u class="lead">Corregí estos bugs:</u> resultados de búsqueda incompletos con más de 15 mil filas en la base de datos, búsqueda lenta, comportamiento impredecible de la aplicación en modo offline.</li>
-  <li>Disponible en las tiendas para Android e iOS.</li>
+<h3>Flutter Developer — sep 2024 — jul 2025 | Grand Mobile (Dynamic Technologies), Argentina, remoto</h3>
+<p class="sub">Juego de rol móvil, simulador de vida, 4M MAU</p>
+<p class="desc">Port de la versión iOS del juego de Java a Flutter en 10 meses: más de 30 interfaces a partir de diseños en Figma y lógica de cliente de más de 40 módulos del juego. Disponible en App Store.</p>
+<ul class="meta">
+  <li>equipo: más de 50 personas</li>
 </ul>
+<ul>
+  <li>desarrollé desde cero más de 30 interfaces a partir de diseños en Figma, entregué nuevas funcionalidades de gameplay a diario</li>
+  <li>conecté la app al backend en C++ (RakNet::BitStream, RPC)</li>
+  <li>corregí elementos de UI rotos, desincronización del estado del juego, operaciones de red inestables</li>
+</ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · Bloc · Dio · Retrofit · Clean Architecture · GoRouter · C++ backend · RakNet BitStream · RPC · PAWN · Figma</p>
 
-<h3>Flutter Developer — may 2023 — nov 2024 | Dolinger Web, Kazajistán, remoto, 5–10K MAU</h3>
-<p class="sub">Apps comerciales de tiendas con pedidos y seguimiento: 65 clientes y más de 20 mil usuarios</p>
-<ul>
-  <li><u class="lead">Implementé las siguientes funcionalidades:</u> calendario semanal de entregas en el perfil, nueva vista de producto con visibilidad del horario de almuerzo, cambio de la vista de categorías, reescritura completa de la funcionalidad de cambio de tema, reemplazo de Yandex Maps por Google Maps.</li>
-  <li><u class="lead">Corregí estos bugs:</u> búsqueda de productos rota, bug de búsqueda con Yandex Maps (instalación de Crashlytics).</li>
+<h3>Flutter Developer — feb 2024 — feb 2025 | TN-GROUP LLC, Europa, remoto</h3>
+<p class="sub">Sistema ERP para el servicio técnico de equipos</p>
+<p class="desc">Soporte a 4 clientes con apps construidas sobre la aplicación principal ERP-Aurora. Lanzamos un navegador WebView para entrar cómodamente a las cuentas de las empresas del grupo.</p>
+<ul class="meta">
+  <li>equipo: 2 desarrolladores Flutter</li>
+  <li>empresa: más de 20 empleados</li>
 </ul>
+<ul>
+  <li>redacté especificaciones técnicas y las coordiné con los desarrolladores de backend</li>
+  <li>al desarrollar nuevas funcionalidades garanticé el soporte offline-first y el funcionamiento autónomo de la app en dispositivos Android antiguos</li>
+  <li>publiqué releases y actualizaciones</li>
+</ul>
+<p class="stack"><b>Stack:</b> Git · Bloc · cubit · mobx · SQLite · Drift · Hive · Injectable, get_it · REST API, Swagger · Postman · App Store Review Guidelines · Provisioning Profiles &amp; Certificates</p>
+
+<h3>Flutter Developer — may 2023 — nov 2024 | Dolinger Web, Kazajistán, remoto</h3>
+<p class="sub">Apps white-label de tiendas con pedidos y seguimiento: 65 clientes, más de 20 mil usuarios, 5–10K MAU</p>
+<p class="desc">Mantenimiento de más de 70 apps de clientes sobre una plataforma común: calendario semanal de entregas en el perfil, nuevas vistas de productos y categorías, cambio de tema reescrito, migración de Yandex Maps a Google Maps.</p>
+<ul class="meta">
+  <li>empresa: Dolinger Web, Kazajistán</li>
+</ul>
+<ul>
+  <li>integré SDKs de pagos y mapas, Firebase Messaging, deep links</li>
+  <li>reescribí por completo el cambio de tema, reemplacé Yandex Maps por Google Maps</li>
+  <li>corregí la búsqueda de productos rota, configuré Crashlytics</li>
+  <li>introduje una Contribution Guide y Gitflow; publiqué releases en App Store y Google Play</li>
+</ul>
+<p class="stack"><b>Stack:</b> Flutter · Dart · REST API · Firebase Messaging · Crashlytics · Google Maps · Yandex Maps · Deep Links · Gitflow · App Store / Google Play</p>
 
 <h2>AI-Native Engineering (2025–2026)</h2>
 <ol>
