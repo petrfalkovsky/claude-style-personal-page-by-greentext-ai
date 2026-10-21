@@ -35,7 +35,7 @@
 </div>
 
 <h2>Summary</h2>
-<p class="summary">Flutter-инженер с опытом 6+ лет, прошедший путь от мобильной разработки в командах до соло-фаундера, который строит и ведёт production-SaaS целиком: mobile + web + бэкенд + ML + платежи + рост + инфраструктура. Глубокая экспертиза в AI-first инжиниринге — воркфлоу, где один инженер с AI-агентами выдаёт результат команды из 4–6 человек. В свободное время веду lifestyle-блог, играю в шахматы и баскетбол, учу кастильский испанский в Аргентине и провожу время с близкими. <b>У меня даже есть кот</b> — назвать аргентинского кота Васькой придумал мой сосед Клаудио 👉👈</p>
+<p class="summary">Продуктовый инженер с 6+ годами опыта: проектирую интерфейсы и сам довожу их до продакшен-кода на Flutter, TypeScript и React. Сейчас работаю UX Expert в Mercado Pago, где отвечаю за дизайн-систему, доступность и производительность. Выпускаю мобильные приложения в App Store и Google Play: от игры на 4M MAU (Grand Mobile) до продукта с $1.2M MRR, где я собрал и вёл команду (Walter Writes AI). Строю AI-продукты целиком, от бэкенда и ML до платежей и роста: свой SaaS с платящими пользователями и собственной ML-моделью (Greentext AI) и ERP для производства изделий из камня, в которой смета готова за минуты вместо часов (20mm). Встраиваю AI в разработку там, где ему можно доверять, и ставлю проверки там, где нельзя: тесты пишутся раньше реализации, у агента нет доступа к прод-ключам, каждое его изменение можно отследить (Walter Writes, AI Cleaner, Erlesen). Работал в командах от 2 до 50+ человек. До программирования основал несколько бизнесов, поэтому думаю продажами, юнит-экономикой и результатом, а не тикетами. <b>У меня даже есть кот</b> — назвать аргентинского кота Васькой придумал мой сосед Клаудио 👉👈</p>
 
 <h2>Professional Experience</h2>
 
@@ -54,60 +54,56 @@
 </ul>
 <p class="stack"><b>Стек:</b> HTML · CSS · JavaScript · TypeScript · React · Flutter · Dart · Figma · Design Systems · Design Tokens · WCAG · Firebase Crashlytics · CI/CD · Claude Code · MCP</p>
 
-<h3>Co-Founder / Lead Engineer — июль 2026 — сейчас | 20mm, Москва, удалённо</h3>
-<p class="sub">CRM сметчика для изделий из камня: от чертежа дизайнера до сметы, раскроя, цеха и приёмки</p>
-<p class="desc">Менеджер получает смету с раскроем плит за минуты вместо часов: чертёж (PDF, фото, скан, DXF) → детали → швы → раскрой → услуги и цена → смета, договор и гостевая ссылка для заказчика. Каталог на 1 670 позиций камня, экран цеха, приёмка с подписью заказчика на телефоне. Бета 1.0 на Flutter, версия 2.0 на Next.js. <a href="https://20-mm.ru">20-mm.ru</a></p>
+<h3>Fullstack Developer — апрель 2026 — октябрь 2026 | 20mm — изделия из камня в интерьере, Россия–Аргентина, удалённо</h3>
+<p class="sub">AI roll-up компании по реализации изделий из камня в интерьере под ключ</p>
+<p class="desc">Реализовал от этапа проектирования до релиза ERP-систему, с которой менеджер ведёт 150–200 клиентов в месяц вместо 25–30. Выручка компании выросла с 3 до 8 млн ₽ в месяц без значимых расходов. Бета 1.0 на Flutter, версия 2.0 на Next.js. <a href="https://20-mm.ru">20-mm.ru</a></p>
 <ul class="meta">
-  <li>команда: 1 инженер + AI-агенты</li>
-  <li>компания: изделия из камня под ключ для московских дизайн-студий, оборот 7–9 млн ₽ в месяц</li>
+  <li>команда: 1 инженер + AI-агенты на базе Claude Fable 5</li>
 </ul>
 <ul>
-  <li>спроектировал границы AI: модель только читает чертёж и формулирует, деньги считает детерминированный движок — цифра в смете повторяется от прогона к прогону</li>
-  <li>границы модели держит код, а не промпт: проверка темы до вызова, таймаут, проверка ответа по схеме, откат к правилам, месячный потолок расходов на AI</li>
-  <li>чтение чертежей на сервере (Gemini), ассистент с правкой расчёта фразами и голосом (DeepSeek), MCP-сервер: Claude передаёт деталировку в расчёт по личному ключу</li>
-  <li>сверял движок с ручными расчётами менеджера на реальных заказах; 150+ Playwright-сценариев идут тем же путём, что пользователь на экране</li>
-  <li>единая дизайн-система для веба и Flutter из одного файла токенов (Apple HIG, Liquid Glass), светлая и тёмная схемы; интерфейс на 14 языках</li>
-  <li>инфраструктура: прод и стенд на сервере в Москве (Docker Compose, nginx, Let's Encrypt), выход к зарубежным AI API через Tailscale, ночные резервные копии с проверенным восстановлением; разобрал инцидент безопасности, сменил ключи и поставил мониторинг</li>
+  <li>расчёт КП для дизайнера интерьера — за 15 минут вместо 3–4 часов</li>
+  <li>несколько подборок натурального камня по фото рисунка — за 10 минут вместо 4–5 часов</li>
+  <li>договор, акты на закупку материала и документы для передачи в производство — за 20 минут вместо 2–3 часов</li>
+  <li>границы AI держит код, а не промпт: модель только читает чертёж и формулирует, деньги считает детерминированный движок; таймаут, проверка ответа по схеме, откат к правилам, месячный потолок расходов на AI</li>
+  <li>MCP-сервер, через который Claude передаёт деталировку в расчёт; 150+ Playwright-сценариев идут тем же путём, что пользователь на экране; интерфейс на 14 языках</li>
 </ul>
 <p class="stack"><b>Стек:</b> Next.js · React · TypeScript · Tailwind · Three.js · Zod · next-intl · PostgreSQL · Go · Flutter · Docker Compose · nginx · Tailscale · Cloudflare · Playwright · MCP · Gemini · DeepSeek · Claude</p>
 
-<h3>Flutter Developer (Founder) — апрель 2026 — сейчас | Greentext AI Inc., Аргентина–США, удалённо</h3>
-<p class="sub">AI-хуманизатор и детектор текста</p>
-<p class="desc">Собственный SaaS с платящими пользователями: исследовал рынок, зарегистрировал компанию в Делавэре, построил продукт целиком и веду рост. Одно Flutter-приложение покрывает Web, iOS и Android. <a href="https://greentext.ai">greentext.ai</a></p>
+<h3>Founder, Lead Flutter Developer — апрель 2026 — сейчас | Greentext AI Inc., США–Аргентина, удалённо</h3>
+<p class="sub">Greentext — AI-гуманизатор и детектор текста</p>
+<p class="desc">Собственный SaaS с платящими пользователями. Одно Flutter-приложение покрывает Web, iOS и Android. <a href="https://app.greentext.ai/">app.greentext.ai</a></p>
 <ul class="meta">
   <li>команда: 1 инженер + AI-агенты</li>
   <li>компания: Greentext AI Inc., Delaware C-corp</li>
 </ul>
 <ul>
-  <li>построил Flutter-приложение (Web, iOS, Android) с авторизацией, тарифами и админ-панелью и Go-бэкенд (REST API, PostgreSQL, Redis)</li>
-  <li>обучил собственный ML-детектор (дообученная RoBERTa), превосходящий конкурентов вроде Sapling и Winston</li>
-  <li>подключил биллинг Stripe: подписки, metered overage, вебхуки, идемпотентность</li>
-  <li>закрывал дыры анти-абьюза и фингерпринтинга, рассинхрон атрибуции между кликами по рекламе и покупками, обеспечивал надёжность staging/prod</li>
+  <li>обучил standalone ML-детектор (дообученная RoBERTa), превосходящий конкурентов вроде Sapling и Winston</li>
+  <li>подключил биллинг Stripe: подписки, metered overage, вебхуки</li>
+  <li>с помощью регресс-тестов и реальных атак закрыл уязвимости анти-абьюза и фингерпринтинга</li>
+  <li>выстроил git-flow со стендами staging/prod</li>
 </ul>
 <p class="stack"><b>Стек:</b> Flutter · Dart · Go · PostgreSQL · Redis · Next.js · PyTorch · RoBERTa · Stripe · AWS · Docker · GitHub Actions · Cloudflare · Sentry · GA4 · GTM</p>
 
-<h3>Lead Mobile Developer — октябрь 2025 — июнь 2026 | Greentext AI Inc., США, удалённо · проект Walter Writes AI</h3>
-<p class="sub">AI-хуманизатор и детектор текста для Walter IA Inc. (США), iOS и Android, $1.2M MRR</p>
-<p class="desc">Мобильные приложения хуманизатора и AI-детектора для американского заказчика: история с offline-кэшем, 10 языков интерфейса, вход через email, Google, Facebook и Apple, подписки Apple/Google с серверной проверкой. <a href="https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.walterwrites">Google Play</a></p>
+<h3>Lead Flutter Developer — октябрь 2025 — сейчас | Greentext AI Inc., США–Канада, удалённо · проект Walter Writes AI</h3>
+<p class="sub">Walter Writes — AI-гуманизатор и детектор текста для Walter IA Inc., iOS и Android, $1.2M MRR</p>
+<p class="desc">Вёл разработку с нуля: собрал команду, архитектура и code review. Хуманизатор, AI-детектор с оценкой по фрагментам, история с offline-кэшем, 10 языков интерфейса, вход через email, Google, Facebook и Apple, подписки с серверной проверкой. <a href="https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.walterwrites">Google Play</a></p>
 <ul class="meta">
-  <li>команда: 3 Flutter-разработчика, собрал и вёл</li>
-  <li>заказчик: Walter IA Inc., США</li>
+  <li>команда: 3 Flutter-разработчика</li>
+  <li>заказчик: Walter IA Inc.</li>
 </ul>
 <ul>
-  <li>собрал команду, отвечал за архитектуру, code review и релизный цикл в App Store и Google Play</li>
-  <li>выстроил test-driven цикл с AI-агентом по рекомендациям Anthropic: тесты по контракту OpenAPI пишутся первыми, агент подтверждает, что они падают, и только потом пишет реализацию до зелёного прогона</li>
-  <li>unit- и bloc-тесты на модели, сервисы и каждую фичу — слой проверки, который агент не может «уговорить»; справочники Apple IAP и Walter API лежат в репозитории как контекст для агента</li>
-  <li>закрыл edge-кейсы подписок: восстановление покупок, повторные вебхуки Apple, рассинхрон статуса тарифа</li>
-  <li>развёл окружения preprod/staging/prod и вынес секреты за пределы репозитория — прод-ключей агент не видит; написал утилиты поиска неиспользуемых ассетов и ключей локализации</li>
+  <li>релизный цикл в App Store и Google Play</li>
+  <li>исправил edge-кейсы подписок: восстановление покупок, повторные вебхуки Apple, рассинхрон статуса тарифа; написал утилиты поиска неиспользуемых ассетов и ключей локализации</li>
+  <li>развёл окружения preprod/staging/prod, секреты вынес за пределы репозитория</li>
+  <li>AI-разработка по рекомендациям Anthropic: сначала тесты по контракту OpenAPI, агент подтверждает, что они падают, и только потом пишет реализацию до зелёного прогона; unit- и bloc-тесты — слой проверки, который агент не может «уговорить»; прод-ключей агент не видит</li>
 </ul>
 <p class="stack"><b>Стек:</b> Flutter · Dart · Bloc · GoRouter · Dio · Hive · In-App Purchase · Firebase Crashlytics · Firebase Analytics · Google / Facebook / Apple Sign-In · Cloudflare Turnstile · OpenAPI · Mockito · bloc_test · Claude Code</p>
 
-<h3>Flutter Developer — январь 2026 — июнь 2026 | Greentext AI Inc., США, удалённо · проект Erlesen</h3>
+<h3>Lead Flutter Developer — январь 2026 — июнь 2026 | Greentext AI Inc., США–Швейцария, удалённо · проект Erlesen</h3>
 <p class="sub">Erlesen — Kurzgeschichten: читалка рассказов для немецкого рынка, iOS и Android</p>
-<p class="desc">Чтение коротких рассказов с прогрессом и фокус-режимом, аудиоверсии с фоновым воспроизведением, закладки, избранное, страницы авторов, offline-библиотека, подписки и ранний триал. <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a></p>
+<p class="desc">Чтение коротких рассказов с прогрессом и фокус-режимом, аудиоверсии с фоновым воспроизведением, закладки, избранное, страницы авторов, offline-библиотека, подписки и ранний триал. <a href="https://www.erlesen.swiss/">erlesen.swiss</a> · <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a> · <a href="https://play.google.com/store/apps/details?id=it.app.erlesen">Google Play</a></p>
 <ul class="meta">
   <li>команда: 2 Flutter-разработчика</li>
-  <li>компания: Greentext AI Inc.</li>
 </ul>
 <ul>
   <li>выстроил контекст-инжиниринг для AI-агента: правила проекта в CLAUDE.md и граф знаний кода через MCP — агент сначала смотрит радиус влияния изменения, затронутые сценарии и покрытие тестами, потом правит</li>
@@ -117,16 +113,15 @@
 </ul>
 <p class="stack"><b>Стек:</b> Flutter · Dart · Bloc · GoRouter · Drift · Firebase Auth · Firestore · Remote Config · FCM · RevenueCat · just_audio · audio_service · Airtable · gen-l10n · MCP · Claude Code</p>
 
-<h3>Flutter Developer — март 2025 — июнь 2026 | Greentext AI Inc., США, удалённо · проект JewBuzz Love</h3>
-<p class="sub">Дейтинг-приложение для еврейского сообщества, iOS и Android; десятки тысяч MAU, экспансия в LATAM</p>
-<p class="desc">Знакомства с чатами в реальном времени, режимы поиска (карта, рулетка, слепое свидание), лайки и избранное, покупки in-app, deep links, push-уведомления и геолокация. <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></p>
+<h3>Flutter Developer — март 2025 — июнь 2026 | Greentext AI Inc., США–Аргентина, удалённо · проект JewBuzz Love</h3>
+<p class="sub">Дейтинг-приложение для еврейского сообщества, iOS и Android; 10K+ MAU в Европе, экспансия в LATAM</p>
+<p class="desc">Знакомства с чатами в реальном времени, режимы поиска (карта, рулетка, слепое свидание), лайки и избранное, покупки in-app, deep links, push-уведомления и геолокация. <a href="https://apps.apple.com/us/app/jewbuzz-love/id6446214897">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></p>
 <ul class="meta">
   <li>команда: 2 Flutter-разработчика</li>
-  <li>компания: Greentext AI Inc.</li>
 </ul>
 <ul>
-  <li>применял AI-агентов на большой чужой кодовой базе: сначала read-only исследование и план, правки — маленькими PR через обычное ревью команды</li>
-  <li>схема orchestrator-workers: параллельные субагенты по модулям; автоматический гейт (flutter analyze, сборка всех flavors) до того, как изменение увидит человек</li>
+  <li>применял AI-агентов маленькими PR через обычное ревью команды; схема orchestrator-workers — параллельные субагенты по модулям</li>
+  <li>автоматический гейт (flutter analyze, сборка всех flavors) до того, как изменение увидит человек</li>
   <li>поддерживал сборки dev/preprod/prod с отдельными Firebase-проектами</li>
   <li>чинил потерю сообщений при переподключении сокета, дубли push-уведомлений, краши из Firebase Crashlytics</li>
 </ul>
@@ -137,57 +132,59 @@
 <p class="desc">Находит похожие и размытые фото, дубликаты и серии, Live Photos, записи экрана и большие видео; swipe-режим разбора, подписки. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></p>
 <ul class="meta">
   <li>команда: 1 разработчик + AI-агент</li>
-  <li>компания: Greentext AI Inc.</li>
 </ul>
 <ul>
   <li>spec-driven разработка: техспецификация и фазы — контракт для AI-агента; агент коммитит от отдельного git-автора (46 из 72 коммитов), поэтому каждое его изменение прослеживается и откатывается</li>
   <li>принимал каждую фазу по чек-листу тестирования Vision на реальном устройстве; публикация в стор — только руками человека</li>
-  <li>реализовал perceptual hash (DCT) для похожих фото и дисперсию Лапласиана + Apple Vision для размытых</li>
-  <li>сделал нативные компоненты iOS 26 через Platform Views и мост к Swift на Pigeon</li>
+  <li>реализовал perceptual hash (DCT) для похожих фото и дисперсию Лапласиана + Apple Vision для размытых; нативные компоненты iOS 26 через Pigeon</li>
   <li>ускорил сканирование больших библиотек (фоновая обработка с паузой и продолжением), убрал рост памяти на миниатюрах</li>
 </ul>
 <p class="stack"><b>Стек:</b> Flutter · Dart · Swift · Pigeon · Platform Views · Apple Vision · photo_manager · Bloc · hydrated_bloc · get_it · injectable · freezed · auto_route · Apphud · AppsFlyer · ATT · Claude Code</p>
 
-<h3>Flutter Developer — сентябрь 2024 — июль 2025 | Grand Mobile (Dynamic Technologies), Аргентина, удалённо</h3>
+<h3>Flutter Developer — август 2024 — июль 2025 | Grand Mobile RP (Dynamic Technologies TOO), Алматы, удалённо</h3>
 <p class="sub">Мобильная ролевая игра, симулятор жизни, 4M MAU</p>
-<p class="desc">Порт iOS-версии игры с Java на Flutter за 10 месяцев: более 30 интерфейсов по макетам Figma и клиентская логика более 40 игровых модулей. Приложение доступно в App Store.</p>
+<p class="desc">За 10 месяцев зарелизили iOS-версию: порт с Java на Flutter. <a href="https://grnd.game/">grnd.game</a> · <a href="https://apps.apple.com/us/app/grand-mobile-role-play-online/id6741001464">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.grand.launcher">Google Play</a></p>
 <ul class="meta">
-  <li>команда: 50+ человек</li>
+  <li>команда: 3 Flutter-разработчика, 1 C++-бэкендер</li>
+  <li>компания: 50+ сотрудников</li>
 </ul>
 <ul>
-  <li>разработал с нуля 30+ интерфейсов по макетам Figma, ежедневно выпускал новые геймплейные фичи</li>
-  <li>подключил приложение к C++-бэкенду (RakNet::BitStream, RPC)</li>
-  <li>чинил сломанные UI-элементы, рассинхрон игрового состояния, нестабильные сетевые операции</li>
+  <li>30+ экранов по макетам Figma</li>
+  <li>подключил и написал клиентскую логику для 40+ интерфейсов и игровых модулей</li>
+  <li>создавал и согласовывал с C++-бэкендером контракты для запросов</li>
+  <li>писал UI-утилиты и overlay-решения для навигации и приоритета разных видов нотификаций и баннеров в игре</li>
 </ul>
-<p class="stack"><b>Стек:</b> Flutter · Dart · Bloc · Dio · Retrofit · Clean Architecture · GoRouter · C++ backend · RakNet BitStream · RPC · PAWN · Figma</p>
+<p class="stack"><b>Стек:</b> Git · Bloc · RakNet::BitStream, C++, PAWN, RPC · Dio · Retrofit · Figma · Clean Architecture · GoRouter · Scrum · Kanban · Xcode · TestFlight</p>
 
-<h3>Flutter Developer — февраль 2024 — февраль 2025 | ООО ТН-ГРУПП, Европа, удалённо</h3>
+<h3>Flutter Developer — февраль 2023 — июнь 2024 | ООО ТН-ГРУПП, Москва</h3>
 <p class="sub">ERP-система для обслуживания техники</p>
-<p class="desc">Поддержка 4-х клиентов, с приложениями построенными на базе основного приложения ERP-Aurora. Запустили WebView-браузер для удобного входа в учетные записи группы-компаний.</p>
+<p class="desc">Поддержка 4 клиентов с приложениями, построенными на базе основного приложения ERP-Aurora. Запустили WebView-браузер для удобного входа в учётные записи группы компаний. <a href="https://tn-group.net">tn-group.net</a></p>
 <ul class="meta">
-  <li>команда: 2 флаттер-разработчика</li>
+  <li>команда: 2 Flutter-разработчика</li>
   <li>компания: 20+ сотрудников</li>
 </ul>
 <ul>
-  <li>формировал техническое задание, согласовывал с бекенд-разработчиками</li>
-  <li>при написании новых фич, обеспечивал offline-first поддержку, автономную работу приложения для устаревших моделей андроид устройств</li>
+  <li>формировал техническое задание, согласовывал с бэкенд-разработчиками</li>
+  <li>при написании новых фич обеспечивал offline-first поддержку и автономную работу приложения на устаревших Android-устройствах</li>
   <li>публиковал релизы и обновления</li>
 </ul>
-<p class="stack"><b>Стек:</b> Git · Bloc · cubit · mobx · SQLite · Drift · Hive · Injectable, get_it · REST API, Swagger · Postman · App Store Review Guidelines · Provisioning Profiles &amp; Certificates</p>
+<p class="stack"><b>Стек:</b> Git · Bloc · cubit · mobx · SQLite · PostgreSQL · MySQL · Docker · Drift · Hive · Injectable, get_it · REST API, Swagger · Postman · App Store Review Guidelines · Provisioning Profiles &amp; Certificates</p>
 
-<h3>Flutter Developer — май 2023 — ноябрь 2024 | Dolinger Web, Казахстан, удалённо</h3>
-<p class="sub">White-label приложения магазинов с заказом и трекингом: 65 клиентов, 20 тыс.+ пользователей, 5–10K MAU</p>
-<p class="desc">Поддержка 70+ приложений клиентов на общей платформе: недельное расписание доставки в профиле, новое отображение товаров и категорий, переписанная смена темы, переход с Яндекс-карт на Google Maps.</p>
+<h3>Flutter Developer — май 2022 — январь 2023 | Dolinger, Санкт-Петербург</h3>
+<p class="sub">Мобильное приложение для доставки еды</p>
+<p class="desc">Поддерживал 70+ приложений. <a href="https://dolinger-web.ru">dolinger-web.ru</a></p>
 <ul class="meta">
-  <li>компания: Dolinger Web, Казахстан</li>
+  <li>команда: 2 Flutter-разработчика</li>
+  <li>компания: 5+ сотрудников</li>
 </ul>
 <ul>
-  <li>интегрировал платёжные SDK и карты, Firebase Messaging, deep links</li>
-  <li>полностью переписал функциональность смены темы, заменил Яндекс-карты на Google Maps</li>
-  <li>чинил неработающий поиск товаров, подключил Crashlytics</li>
-  <li>ввёл Contribution Guide и Gitflow; публиковал релизы в App Store и Google Play</li>
+  <li>отвечал за создание и адаптацию приложения для новых клиентов</li>
+  <li>писал фичи и правил баги: подключение картографических и платёжных SDK, экраны с подключением к бэкенду</li>
+  <li>согласовывал контракты на JSON-пакеты; внедрил в компанию Contribution Guide и Gitflow</li>
+  <li>подключал Firebase Messaging, push-сценарии и deep links, работал с Яндекс- и Google-картами</li>
+  <li>публиковал в App Store и Google Play</li>
 </ul>
-<p class="stack"><b>Стек:</b> Flutter · Dart · REST API · Firebase Messaging · Crashlytics · Google Maps · Yandex Maps · Deep Links · Gitflow · App Store / Google Play</p>
+<p class="stack"><b>Стек:</b> Git · Provider · Riverpod · Redux · MVVM · Postman · Navigator 2.0 · Material · App Store Review Guidelines · Provisioning Profiles &amp; Certificates · CocoaPods</p>
 
 <h2>AI-Native Engineering (2025–2026)</h2>
 <ol>
@@ -198,17 +195,17 @@
   <li>Лестница доверия агенту (по Anthropic, «Building Effective Agents»): начинаю с простейшего — одного вызова модели или workflow (prompt chaining, routing, evaluator-optimizer) — и даю агенту автономию, только когда простое не тянет; доверие расширяю по мере того, как проходят слои проверки: тесты, линтеры, отдельный агент-ревьюер, хуки, ручная приёмка. Инструменты агента проектирую как интерфейс (agent-computer interface), права — по allowlist, необратимые действия — только через человека.</li>
 </ol>
 
-<h2>Professional Development / Affiliations</h2>
+<h2>Open source и участие в проектах (январь 2021 — июнь 2024)</h2>
 <ol>
-  <li>Open source: IT Solutions Management International Pte. Ltd. (Сингапур) — Gapopa messenger: <a href="https://github.com/team113/messenger/graphs/contributors">github.com/team113/messenger</a></li>
-  <li>Kaif Games FZCO (Дубай) — мобильная игра Rus RP: разработал и интегрировал 12 интерфейсов. ЖК «Ласкино Парк» — iOS-приложение для управления недвижимостью и жителей; команда из 3 человек; опубликовано в App Store с контролем доступа и бронированием спортплощадок.</li>
-  <li>Toxicity — настроил и внедрил аналитику, спроектировал архитектуру приложения.</li>
-  <li>Athina Plus (Казахстан) — веб-студия; разработал несколько сайтов.</li>
-  <li>LLC VIBE GAMES (Казахстан) — мобильная игра MATRESHKA RP: разработал и интегрировал 3 сложных интерфейса, например: <a href="https://petrfalkovsky.github.io/vibe_games/">petrfalkovsky.github.io/vibe_games</a></li>
+  <li>Open source мессенджер <a href="https://gapopa.com">gapopa.com</a>: BloC · GetX · Router · Project Fluent · Gherkin · Drift · GraphQL · artemis · MethodChannel · FFI · GitHub Actions · CI/CD — <a href="https://github.com/team113/messenger/graphs/contributors">github.com/team113/messenger</a></li>
+  <li>Kaif Games FZCO (Дубай), мобильная игра «Русь Мобайл»: создал и подключил 12 интерфейсов — <a href="https://play.google.com/store/apps/details?id=com.russia.game">Google Play</a></li>
+  <li>Laskino Park Residential Complex (Санкт-Петербург) — iOS-приложение для управляющей компании и жильцов ЖК.</li>
+  <li>Athina Plus (Казахстан) — веб-студия, разработка нескольких веб-сайтов: React, BEM, CSS, JS, Node.js.</li>
+  <li>LLC VIBE GAMES (Казахстан), мобильная игра MATRESHKA RP: сверстал <a href="https://petrfalkovsky.github.io/vibe_games/">интерфейсы</a> и написал обучалку для новых игроков с подсветкой виджетов на экране — <a href="https://apps.apple.com/us/app/matreshka-rp-multiplayer-city/id6474574017">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.jekmant.matrplauncher">Google Play</a></li>
 </ol>
 
 <h2>Key Skills</h2>
-<p>UX Design · Interaction Design · Product Design · Design Systems · Design Tokens · Accessibility (WCAG) · Web Performance · HTML · CSS · JavaScript · TypeScript · React · Claude Code · MCP · Agentic Workflows · Evals · Flutter · Dart · OOP · SOLID · Git · Bloc · Provider · MobX · GetX · RESTful API · GraphQL · Bitstream · C++ backend · PAWN · Dio · Retrofit · CI/CD · GitHub Actions · Firebase Firestore · Push Notifications · Figma · Scrum · Kanban · Postman · Swagger · GetIt · get_it · injectable · Drift · Hive · SQLite · Google Sign-In · Sign In with Apple · json serializable · GRPC · Google Maps · Yandex Maps · Flutter CLI · Cron · Event Loop · Clean Architecture · GoRouter · artemis · MethodChannel · FFI · Router · Swift · Kotlin · Widget tests · Integration tests · Unit tests · Gherkin · Mockito</p>
+<p>UX Design · Interaction Design · Product Design · Design Systems · Design Tokens · Accessibility (WCAG) · Web Performance · HTML · CSS · JavaScript · TypeScript · React · Claude Code · MCP · Agentic Workflows · Evals · Flutter · Dart · OOP · SOLID · Git · Bloc · Provider · Riverpod · Redux · MVVM · MobX · GetX · RESTful API · GraphQL · Bitstream · C++ backend · PAWN · Dio · Retrofit · CI/CD · GitHub Actions · Firebase Firestore · Push Notifications · Figma · Scrum · Kanban · Postman · Swagger · GetIt · get_it · injectable · Drift · Hive · SQLite · Google Sign-In · Sign In with Apple · json serializable · GRPC · Google Maps · Yandex Maps · Flutter CLI · Cron · Event Loop · Clean Architecture · GoRouter · artemis · MethodChannel · FFI · Router · Swift · Kotlin · Widget tests · Integration tests · Unit tests · Gherkin · Mockito · Staggered Animations · Xcode · TestFlight</p>
 
 </body>
 </html>

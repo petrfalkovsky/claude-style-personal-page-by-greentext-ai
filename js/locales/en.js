@@ -66,7 +66,7 @@ window.LOCALES.en = {
       { name: "Greentext AI", sub: "founder · solo engineer", desc: "AI text humanizer & detector. Flutter + Go + Next.js + custom ML. Live, with paying users.", link: "greentext" },
       { name: "Walter Writes AI", sub: "iOS · Android · $1.2M MRR", desc: "AI humanizer built for <b>Walter IA Inc.</b> (US). I assembled the team and led development of both mobile apps; shipped on the App Store and Google Play, the product now runs at $1.2M MRR.", link: "walter" },
       { name: "Curator AI", sub: "MVP · AI-first CRM", desc: "CRM for stone-fabrication contractors: quotes, contracts and acceptance acts in minutes instead of hours. One manager now handles 7x more clients with no delays at any step.", link: null },
-      { name: "20mm", sub: "co-founder · turnkey stone", desc: "Turnkey stone interiors for several Moscow design studios with 7–9M RUB monthly revenue.", link: null },
+      { name: "20mm", sub: "co-founder · turnkey stone", desc: "Turnkey stone interiors for Moscow design studios; the ERP system took revenue from 3M to 8M RUB a month.", link: null },
       { name: "Erlesen", sub: "iOS · Android", desc: "Kurzgeschichten — a short-stories reading app for the German market, built and published solo.", link: "erlesen" },
       { name: "AI Clean Up — Phone Cleaner", sub: "iOS", desc: "AI-powered phone-cleaning utility: duplicates, similar photos, storage insights. Live on the App Store.", link: "aicleaner" },
       { name: "IPTV Player", sub: "utility", desc: "IPTV player app: playlists, EPG, favorites.", link: null },
@@ -89,7 +89,7 @@ window.LOCALES.en = {
       { mono: "G", current: true, when: "2026 — now", meta: "greentext.ai",
         role: "<b>Founder / Solo Engineer</b> · Greentext AI",
         note: "AI text humanizer & detector. Built and operate the entire stack: Flutter apps, Go backend, Next.js SEO site, custom ML detector, Stripe billing, AWS infra, growth analytics. Live product with paying users.", tag: "current" },
-      { mono: "W", when: "Oct 2025 — Jun 2026", meta: "Greentext AI Inc. · USA",
+      { mono: "W", current: true, when: "Oct 2025 — now", meta: "Greentext AI Inc. · USA",
         role: "<b>Lead Mobile Developer</b> · Walter Writes AI for Walter IA Inc.",
         note: "iOS and Android apps for a US client: humanizer, detector, offline history, 10 languages, IAP subscriptions with server-side verification. I hired and led the team; the app is at $1.2M MRR. AI workflow: test-first loop — tests from the OpenAPI contract, the agent confirms they fail, then implements until green; unit and bloc tests as a verification layer; agent never sees production keys." },
       { mono: "E", when: "Jan 2026 — Jun 2026", meta: "Greentext AI Inc. · USA",
@@ -101,22 +101,22 @@ window.LOCALES.en = {
       { mono: "J", when: "Mar 2025 — Jun 2026", meta: "Greentext AI Inc. · USA",
         role: "<b>Flutter Developer</b> · JewBuzz Love — dating app, LatAm expansion",
         note: "As part of the team: real-time chats (Amity, Socket.IO, MQTT), discovery modes, in-app purchases, deep links, dev/preprod/prod flavors. AI workflow on a large codebase: read-only exploration and a plan first, small PRs through the team’s review, orchestrator-workers with parallel subagents, an automated gate (analyze + all-flavor builds) before a human sees the change." },
-      { mono: "2", current: true, when: "Jul 2026 — now", meta: "20mm · Moscow",
-        role: "<b>Co-Founder</b> · 20mm — turnkey stone fabrication",
-        note: "Estimating CRM for stone fabrication: drawing (PDF, photo, DXF) → parts → slab nesting → price → quote, contract and client link in minutes instead of hours. The model only reads drawings; money is computed by a deterministic engine, model boundaries enforced in code (timeout, schema check, fallback, spending cap). Gemini reads drawings, DeepSeek assistant, MCP server for Claude, 150+ Playwright scenarios, one design system for web and Flutter, UI in 14 languages. Next.js · TypeScript · PostgreSQL · Go · Flutter.", tag: "current" },
+      { mono: "2", when: "Apr 2026 — Oct 2026", meta: "20mm · Moscow",
+        role: "<b>Fullstack Developer</b> · 20mm — AI roll-up of turnkey stone interiors",
+        note: "ERP system from design to release: one manager handles 150–200 clients a month instead of 25–30, revenue grew from 3M to 8M RUB a month with no significant new costs. Quote in 15 minutes instead of 3–4 hours, stone selections from a photo in 10 minutes instead of 4–5 hours, contract and production documents in 20 minutes instead of 2–3 hours. Team — 1 engineer + AI agents on Claude Fable 5. Next.js · TypeScript · PostgreSQL · Go · Flutter." },
       { mono: "C", current: true, when: "2026 — now", meta: "MVP",
         role: "<b>Founder</b> · Curator AI — AI-first CRM for stone contractors",
         note: "At MVP stage: the system prices jobs and generates contracts and acceptance acts in minutes instead of hours. Manager throughput is up 7x in clients handled, with higher quality and no waiting at any step.", tag: "current" },
       { mono: "S", when: "≈2025",
         role: "<b>Co-Founder</b> · Sylvent — SMB lending fintech",
         note: "Co-founded a small-business lending platform: built the MVP, validated the product hypothesis, ran investor negotiations. The round didn't close — the project was shut down honestly. Takeaways: fundraising process, credit-product unit economics, fast hypothesis testing." },
-      { mono: "▶", when: "Sep 2024 — Jul 2025", meta: "grnd.game · 50+ people",
+      { mono: "▶", when: "Aug 2024 — Jul 2025", meta: "grnd.game · 50+ people",
         role: "<b>Flutter Developer</b> · Grand Mobile (4M MAU game)",
         note: "Shipped the iOS release (Java → Flutter port) in 10 months; 30+ Figma screens; client logic for 40+ interfaces and game modules; C++ backend contracts (RakNet::BitStream, RPC). Stack: Bloc · Dio · Retrofit · Clean Architecture · GoRouter." },
-      { mono: "T", when: "Feb 2024 — Feb 2025", meta: "tn-group.net",
+      { mono: "T", when: "Feb 2023 — Jun 2024", meta: "tn-group.net",
         role: "<b>Flutter Developer</b> · TN-GROUP — field-service ERP",
         note: "Maintained 4 client apps on ERP-Aurora: 20+ bug fixes, 5 features, SSO WebView browser; offline-first for legacy Android devices. Stack: Bloc · MobX · SQLite · Drift · Hive." },
-      { mono: "D", when: "May 2023 — Nov 2024", meta: "dolinger",
+      { mono: "D", when: "May 2022 — Jan 2023", meta: "dolinger",
         role: "<b>Flutter Developer</b> · Dolinger — food-delivery white-label",
         note: "Maintained 70+ apps; payment & maps SDK integrations; Firebase messaging, deeplinks; introduced a Contribution Guide and Gitflow; App Store / Google Play releases." },
       { mono: "⌥", when: "Jan 2021 — Jun 2024", meta: "github.com/petrfalkovsky",
@@ -172,6 +172,9 @@ window.LOCALES.en = {
       { name: "CV — English", sub: "PDF", desc: "Flutter / full-stack CV, US format.", href: "cv/Peter_Parker_CV_US.pdf" },
       { name: "CV — Русский", sub: "PDF", desc: "Резюме на русском.", href: "cv/Peter_Parker_CV_RU.pdf" },
       { name: "CV — Español", sub: "PDF", desc: "CV en español.", href: "cv/Peter_Parker_CV_ES.pdf" },
+      { name: "CV — short, English", sub: "PDF", desc: "One page, the highlights.", href: "cv/Peter_Parker_CV_Short_US.pdf" },
+      { name: "CV — коротко, Русский", sub: "PDF", desc: "Одна страница: самое сильное.", href: "cv/Peter_Parker_CV_Short_RU.pdf" },
+      { name: "CV — breve, Español", sub: "PDF", desc: "Una página, lo esencial.", href: "cv/Peter_Parker_CV_Short_ES.pdf" },
     ],
     btn1: "Download CV (EN) ↗",
   },
@@ -188,12 +191,182 @@ window.LOCALES.en = {
     ],
   },
 
+  apps: {
+    "head": "All projects",
+    "users": "Users",
+    "site": "Site",
+    "iosOnly": "— (iOS only)",
+    "web": "— (web app)",
+    "items": [
+      {
+        "name": "Walter Writes AI",
+        "lines": [
+          "AI text humanizer and detector for Walter IA Inc. (USA).",
+          "Led development from scratch."
+        ],
+        "users": "$1.2M MRR product",
+        "links": [
+          [
+            "App Store",
+            "walter"
+          ],
+          [
+            "Google Play",
+            "walterGP"
+          ]
+        ]
+      },
+      {
+        "name": "Erlesen — Kurzgeschichten",
+        "lines": [
+          "Short-story reader for the German market: audio versions, offline library, subscriptions."
+        ],
+        "links": [
+          [
+            "App Store",
+            "erlesen"
+          ],
+          [
+            "Google Play",
+            "erlesenGP"
+          ]
+        ]
+      },
+      {
+        "name": "AI Clean Up (AI Cleaner)",
+        "lines": [
+          "iOS photo library cleaner: similar and blurry photos, duplicates, large videos."
+        ],
+        "links": [
+          [
+            "App Store",
+            "aicleaner"
+          ],
+          [
+            "Google Play",
+            null,
+            "iosOnly"
+          ]
+        ]
+      },
+      {
+        "name": "JewBuzz Love",
+        "lines": [
+          "Dating for the Jewish community: real-time chats, map, roulette, blind dates."
+        ],
+        "users": "10K+ MAU",
+        "links": [
+          [
+            "App Store",
+            "jewbuzzAS"
+          ],
+          [
+            "Google Play",
+            "jewbuzz"
+          ]
+        ]
+      },
+      {
+        "name": "Grand Mobile: Role Play Online",
+        "lines": [
+          "Mobile role-playing game, life simulator; ported the iOS version from Java to Flutter."
+        ],
+        "users": "4M MAU",
+        "links": [
+          [
+            "App Store",
+            "grandAS"
+          ],
+          [
+            "Google Play",
+            "grandGP"
+          ]
+        ]
+      },
+      {
+        "name": "Rus Mobile: RP Online",
+        "lines": [
+          "Mobile RP game by Kaif Games (Dubai); built and wired 12 interfaces."
+        ],
+        "links": [
+          [
+            "Google Play",
+            "rusGP"
+          ]
+        ]
+      },
+      {
+        "name": "MATRESHKA RP",
+        "lines": [
+          "Multiplayer mobile RP game; built 3 complex interfaces."
+        ],
+        "links": [
+          [
+            "App Store",
+            "matrAS"
+          ],
+          [
+            "Google Play",
+            "matrGP"
+          ]
+        ]
+      },
+      {
+        "name": "Greentext AI",
+        "lines": [
+          "My own SaaS: AI text humanizer and detector, Flutter (Web, iOS, Android) + Go + custom ML model."
+        ],
+        "links": [
+          [
+            "site",
+            "greentextApp"
+          ]
+        ]
+      },
+      {
+        "name": "20mm ERP system",
+        "lines": [
+          "AI roll-up of a turnkey stone interiors company.",
+          "Lets one manager handle 150–200 clients a month instead of 25–30. Grew company revenue from 3M to 8M RUB a month with no significant new costs."
+        ],
+        "links": [
+          [
+            "site",
+            "mm"
+          ],
+          [
+            "App Store / Google Play",
+            null,
+            "web"
+          ]
+        ]
+      },
+      {
+        "name": "Gapopa messenger (open source)",
+        "lines": [
+          "Open-source messenger; my commits were merged into the main repository."
+        ],
+        "links": [
+          [
+            "site",
+            "gapopa"
+          ],
+          [
+            "GitHub",
+            "gapopaGH"
+          ]
+        ]
+      }
+    ]
+  },
+
   help: {
     head: "Commands",
     cmds: [
       ["whoami", "the full story"],
       ["greentext", "the flagship product"],
       ["projects", "everything shipped"],
+      ["apps", "every app, with store links"],
       ["experience", "engineering career"],
       ["skills", "stack & AI-native engineering"],
       ["cv", "download the CV"],

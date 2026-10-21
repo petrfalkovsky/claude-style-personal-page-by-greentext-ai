@@ -19,6 +19,16 @@
     walter:    "https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138",
     walterGP:  "https://play.google.com/store/apps/details?id=com.walterwrites&hl=en",
     whatsapp:  "https://wa.me/541127667104",
+    erlesenGP: "https://play.google.com/store/apps/details?id=it.app.erlesen",
+    jewbuzzAS: "https://apps.apple.com/us/app/jewbuzz-love/id6446214897",
+    grandAS:   "https://apps.apple.com/us/app/grand-mobile-role-play-online/id6741001464",
+    grandGP:   "https://play.google.com/store/apps/details?id=com.grand.launcher",
+    rusGP:     "https://play.google.com/store/apps/details?id=com.russia.game",
+    matrAS:    "https://apps.apple.com/us/app/matreshka-rp-multiplayer-city/id6474574017",
+    matrGP:    "https://play.google.com/store/apps/details?id=com.jekmant.matrplauncher",
+    greentextApp: "https://app.greentext.ai/",
+    mm:        "https://20-mm.ru",
+    gapopaGH:  "https://github.com/team113/messenger",
   };
 
   const { el, kvBlock, productTable, goButton, statBand, expItem, mountPortrait } = window.PortfolioUI;
@@ -102,6 +112,29 @@
     wrap.appendChild(productTable(toRows(T.projects.own)));
     wrap.appendChild(el("div", "rhead", T.projects.headContrib));
     wrap.appendChild(productTable(toRows(T.projects.contrib)));
+    return wrap;
+  }
+
+  /* ---------------------------------------------------------------------
+     apps — every project with its store links
+     --------------------------------------------------------------------- */
+  function buildApps() {
+    const T = window.T();
+    const A = T.apps;
+    const wrap = el("div");
+    wrap.appendChild(el("div", "rhead", A.head));
+    for (const p of A.items) {
+      const rows = [`<b>${p.name}</b>`, ...p.lines];
+      if (p.users) rows.push(`${A.users}: ${p.users}`);
+      for (const [label, key, note] of p.links) {
+        const name = label === "site" ? A.site : label;
+        const url = key ? LINKS[key] : null;
+        rows.push(url
+          ? `${name}: <a href="${url}" target="_blank" rel="noopener noreferrer">${url.replace(/^https?:\/\//, "").replace(/\/$/, "")} ↗</a>`
+          : `${name}: ${A[note]}`);
+      }
+      wrap.appendChild(el("p", "bio-p", rows.join("<br>")));
+    }
     return wrap;
   }
 
@@ -207,14 +240,15 @@
     commands: {
       whoami: buildAbout, about: buildAbout, peter: buildAbout, story: buildAbout,
       greentext: buildGreentext, product: buildGreentext, startup: buildGreentext,
-      projects: buildProjects, apps: buildProjects, portfolio: buildProjects,
+      projects: buildProjects, portfolio: buildProjects,
+      apps: buildApps, all: buildApps, stores: buildApps,
       experience: buildExperience, exp: buildExperience, work: buildExperience, career: buildExperience, education: buildExperience,
       skills: buildSkills, stack: buildSkills, ai: buildSkills,
       cv: buildCv, resume: buildCv, download: buildCv,
       contact: buildContact, links: buildContact, email: buildContact, hire: buildContact,
       help: buildHelp, "?": buildHelp, ls: buildHelp,
     },
-    chips: ["whoami", "greentext", "projects", "experience", "skills", "cv", "contact"],
+    chips: ["whoami", "greentext", "projects", "apps", "experience", "skills", "cv", "contact"],
     unknown: buildUnknown,
     get banner() {
       const T = window.T();

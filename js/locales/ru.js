@@ -66,7 +66,7 @@ window.LOCALES.ru = {
       { name: "Greentext AI", sub: "основатель · solo engineer", desc: "AI-хуманизатор и детектор текста. Flutter + Go + Next.js + собственный ML. Работает, есть платящие пользователи.", link: "greentext" },
       { name: "Walter Writes AI", sub: "iOS · Android · $1.2M MRR", desc: "AI-хуманизатор для <b>Walter IA Inc.</b> (США). Собрал команду и был лидером разработки мобильных приложений; выпущены в App Store и Google Play, сегодня продукт делает $1.2M MRR.", link: "walter" },
       { name: "Curator AI", sub: "MVP · AI-first CRM", desc: "CRM для подрядчиков по камню: расчёты, договоры и акты — за минуты вместо часов. Менеджер ведёт в 7 раз больше клиентов и без задержек на каждом шаге.", link: null },
-      { name: "20mm", sub: "сооснователь · камень под ключ", desc: "Полное сопровождение изделий из камня под ключ для московских дизайн-студий с оборотом 7–9 млн ₽ в месяц.", link: null },
+      { name: "20mm", sub: "сооснователь · камень под ключ", desc: "Полное сопровождение изделий из камня под ключ для московских дизайн-студий; ERP-система подняла выручку с 3 до 8 млн ₽ в месяц.", link: null },
       { name: "Erlesen", sub: "iOS · Android", desc: "Kurzgeschichten — приложение для чтения коротких рассказов на немецком рынке, создано и опубликовано в одиночку.", link: "erlesen" },
       { name: "AI Clean Up — Phone Cleaner", sub: "iOS", desc: "AI-утилита для очистки телефона: дубликаты, похожие фото, аналитика хранилища. Опубликована в App Store.", link: "aicleaner" },
       { name: "IPTV Player", sub: "утилита", desc: "IPTV-плеер: плейлисты, EPG, избранное.", link: null },
@@ -89,7 +89,7 @@ window.LOCALES.ru = {
       { mono: "G", current: true, when: "2026 — сейчас", meta: "greentext.ai",
         role: "<b>Founder / Solo Engineer</b> · Greentext AI",
         note: "AI-хуманизатор и детектор текста. Построил и веду весь стек: Flutter-приложения, Go-бэкенд, Next.js SEO-сайт, собственный ML-детектор, биллинг Stripe, инфраструктура AWS, growth-аналитика. Живой продукт с платящими пользователями.", tag: "сейчас" },
-      { mono: "W", when: "окт 2025 — июн 2026", meta: "Greentext AI Inc. · США",
+      { mono: "W", current: true, when: "окт 2025 — сейчас", meta: "Greentext AI Inc. · США",
         role: "<b>Lead Mobile Developer</b> · Walter Writes AI для Walter IA Inc.",
         note: "Приложения iOS и Android для американского заказчика: хуманизатор, детектор, offline-история, 10 языков, подписки IAP с серверной проверкой. Собрал и вёл команду; приложение делает $1.2M MRR. AI-процесс: сначала тесты — по контракту OpenAPI, агент подтверждает, что они падают, и пишет реализацию до зелёного; unit- и bloc-тесты как слой проверки; прод-ключей агент не видит." },
       { mono: "E", when: "янв 2026 — июн 2026", meta: "Greentext AI Inc. · США",
@@ -101,22 +101,22 @@ window.LOCALES.ru = {
       { mono: "J", when: "мар 2025 — июн 2026", meta: "Greentext AI Inc. · США",
         role: "<b>Flutter Developer</b> · JewBuzz Love — дейтинг, экспансия в LatAm",
         note: "В составе команды: чаты в реальном времени (Amity, Socket.IO, MQTT), режимы знакомств, покупки in-app, deep links, сборки dev/preprod/prod. AI-процесс на большой кодовой базе: сначала read-only исследование и план, маленькие PR через ревью команды, orchestrator-workers с параллельными субагентами, автоматический гейт (analyze + сборка всех flavors) до того, как изменение увидит человек." },
-      { mono: "2", current: true, when: "июл 2026 — сейчас", meta: "20mm · Москва",
-        role: "<b>Сооснователь</b> · 20mm — изделия из камня под ключ",
-        note: "CRM сметчика для изделий из камня: чертёж (PDF, фото, DXF) → детали → раскрой плит → цена → смета, договор и ссылка для заказчика за минуты вместо часов. Модель только читает чертёж, деньги считает детерминированный движок; границы модели держит код (таймаут, проверка по схеме, откат к правилам, потолок расходов). Gemini читает чертежи, ассистент на DeepSeek, MCP-сервер для Claude, 150+ Playwright-сценариев, единая дизайн-система веба и Flutter, интерфейс на 14 языках. Next.js · TypeScript · PostgreSQL · Go · Flutter.", tag: "сейчас" },
+      { mono: "2", when: "апр 2026 — окт 2026", meta: "20mm · Москва",
+        role: "<b>Fullstack Developer</b> · 20mm — AI roll-up изделий из камня под ключ",
+        note: "ERP-система от проектирования до релиза: менеджер ведёт 150–200 клиентов в месяц вместо 25–30, выручка выросла с 3 до 8 млн ₽ в месяц без значимых расходов. КП за 15 минут вместо 3–4 часов, подборки камня по фото за 10 минут вместо 4–5 часов, договор и документы в производство за 20 минут вместо 2–3 часов. Команда — 1 инженер + AI-агенты на Claude Fable 5. Next.js · TypeScript · PostgreSQL · Go · Flutter." },
       { mono: "C", current: true, when: "2026 — сейчас", meta: "MVP",
         role: "<b>Основатель</b> · Curator AI — AI-first CRM для подрядчиков по камню",
         note: "Стадия MVP: система считает сметы, собирает договоры и акты за минуты вместо часов. Продуктивность менеджера выросла в 7 раз по числу клиентов при более высоком качестве и без задержек на каждом шаге.", tag: "сейчас" },
       { mono: "S", when: "≈2025",
         role: "<b>Сооснователь</b> · Sylvent — финтех кредитования МСБ",
         note: "Сооснователь платформы кредитования малого бизнеса: собрал MVP, провалидировал продуктовую гипотезу, вёл переговоры с инвесторами. Раунд не закрылся — проект честно свернули. Вынес: процесс фандрайзинга, юнит-экономику кредитных продуктов, быструю проверку гипотез." },
-      { mono: "▶", when: "сен 2024 — июл 2025", meta: "grnd.game · 50+ человек",
+      { mono: "▶", when: "авг 2024 — июл 2025", meta: "grnd.game · 50+ человек",
         role: "<b>Flutter-разработчик</b> · Grand Mobile (игра, 4M MAU)",
         note: "Выпустил iOS-релиз (порт Java → Flutter) за 10 месяцев; 30+ экранов по Figma; клиентская логика 40+ интерфейсов и игровых модулей; контракты с C++-бэкендом (RakNet::BitStream, RPC). Стек: Bloc · Dio · Retrofit · Clean Architecture · GoRouter." },
-      { mono: "T", when: "фев 2024 — фев 2025", meta: "tn-group.net",
+      { mono: "T", when: "фев 2023 — июн 2024", meta: "tn-group.net",
         role: "<b>Flutter-разработчик</b> · TN-GROUP — полевой ERP",
         note: "Поддерживал 4 клиентских приложения на ERP-Aurora: 20+ багфиксов, 5 фич, SSO WebView-браузер; offline-first для старых Android-устройств. Стек: Bloc · MobX · SQLite · Drift · Hive." },
-      { mono: "D", when: "май 2023 — ноя 2024", meta: "dolinger",
+      { mono: "D", when: "май 2022 — янв 2023", meta: "dolinger",
         role: "<b>Flutter-разработчик</b> · Dolinger — white-label доставка еды",
         note: "Поддерживал 70+ приложений; интеграции платёжных и картографических SDK; Firebase messaging, диплинки; внедрил Contribution Guide и Gitflow; релизы в App Store / Google Play." },
       { mono: "⌥", when: "янв 2021 — июн 2024", meta: "github.com/petrfalkovsky",
@@ -172,6 +172,9 @@ window.LOCALES.ru = {
       { name: "CV — английский", sub: "PDF", desc: "Flutter / full-stack CV, американский формат.", href: "cv/Peter_Parker_CV_US.pdf" },
       { name: "CV — русский", sub: "PDF", desc: "Резюме на русском языке.", href: "cv/Peter_Parker_CV_RU.pdf" },
       { name: "CV — испанский", sub: "PDF", desc: "CV на испанском языке.", href: "cv/Peter_Parker_CV_ES.pdf" },
+      { name: "CV — коротко, Русский", sub: "PDF", desc: "Одна страница: самое сильное.", href: "cv/Peter_Parker_CV_Short_RU.pdf" },
+      { name: "CV — short, English", sub: "PDF", desc: "One page, the highlights.", href: "cv/Peter_Parker_CV_Short_US.pdf" },
+      { name: "CV — breve, Español", sub: "PDF", desc: "Una página, lo esencial.", href: "cv/Peter_Parker_CV_Short_ES.pdf" },
     ],
     btn1: "Скачать CV (EN) ↗",
   },
@@ -188,12 +191,182 @@ window.LOCALES.ru = {
     ],
   },
 
+  apps: {
+    "head": "Все проекты",
+    "users": "Пользователи",
+    "site": "Сайт",
+    "iosOnly": "— (только iOS)",
+    "web": "— (веб-приложение)",
+    "items": [
+      {
+        "name": "Walter Writes AI",
+        "lines": [
+          "AI-гуманизатор и детектор текста для Walter IA Inc. (США).",
+          "Вёл разработку с нуля."
+        ],
+        "users": "продукт на $1.2M MRR",
+        "links": [
+          [
+            "App Store",
+            "walter"
+          ],
+          [
+            "Google Play",
+            "walterGP"
+          ]
+        ]
+      },
+      {
+        "name": "Erlesen — Kurzgeschichten",
+        "lines": [
+          "Читалка коротких рассказов для немецкого рынка: аудиоверсии, offline-библиотека, подписки."
+        ],
+        "links": [
+          [
+            "App Store",
+            "erlesen"
+          ],
+          [
+            "Google Play",
+            "erlesenGP"
+          ]
+        ]
+      },
+      {
+        "name": "AI Clean Up (AI Cleaner)",
+        "lines": [
+          "Утилита очистки галереи iOS: похожие и размытые фото, дубликаты, большие видео."
+        ],
+        "links": [
+          [
+            "App Store",
+            "aicleaner"
+          ],
+          [
+            "Google Play",
+            null,
+            "iosOnly"
+          ]
+        ]
+      },
+      {
+        "name": "JewBuzz Love",
+        "lines": [
+          "Дейтинг для еврейского сообщества: чаты в реальном времени, карта, рулетка, слепые свидания."
+        ],
+        "users": "10K+ MAU",
+        "links": [
+          [
+            "App Store",
+            "jewbuzzAS"
+          ],
+          [
+            "Google Play",
+            "jewbuzz"
+          ]
+        ]
+      },
+      {
+        "name": "Grand Mobile: Role Play Online",
+        "lines": [
+          "Мобильная ролевая игра, симулятор жизни; портировали iOS-версию с Java на Flutter."
+        ],
+        "users": "4M MAU",
+        "links": [
+          [
+            "App Store",
+            "grandAS"
+          ],
+          [
+            "Google Play",
+            "grandGP"
+          ]
+        ]
+      },
+      {
+        "name": "РУСЬ МОБАЙЛ: RP Онлайн ГТА",
+        "lines": [
+          "Мобильная RP-игра Kaif Games (Дубай); создал и подключил 12 интерфейсов."
+        ],
+        "links": [
+          [
+            "Google Play",
+            "rusGP"
+          ]
+        ]
+      },
+      {
+        "name": "MATRESHKA RP",
+        "lines": [
+          "Мобильная мультиплеерная RP-игра; разработал 3 сложных интерфейса."
+        ],
+        "links": [
+          [
+            "App Store",
+            "matrAS"
+          ],
+          [
+            "Google Play",
+            "matrGP"
+          ]
+        ]
+      },
+      {
+        "name": "Greentext AI",
+        "lines": [
+          "Собственный SaaS: AI-хуманизатор и детектор текста, Flutter (Web, iOS, Android) + Go + своя ML-модель."
+        ],
+        "links": [
+          [
+            "site",
+            "greentextApp"
+          ]
+        ]
+      },
+      {
+        "name": "20mm ERP-система",
+        "lines": [
+          "AI roll-up компании по реализации изделий из камня в интерьере под ключ.",
+          "Позволяет менеджеру вести 150–200 клиентов в месяц вместо 25–30. Увеличили выручку компании без значимых расходов с 3 до 8 млн ₽ в месяц."
+        ],
+        "links": [
+          [
+            "site",
+            "mm"
+          ],
+          [
+            "App Store / Google Play",
+            null,
+            "web"
+          ]
+        ]
+      },
+      {
+        "name": "Gapopa messenger (open source)",
+        "lines": [
+          "Мессенджер с открытым кодом, мои коммиты приняты в основной репозиторий."
+        ],
+        "links": [
+          [
+            "site",
+            "gapopa"
+          ],
+          [
+            "GitHub",
+            "gapopaGH"
+          ]
+        ]
+      }
+    ]
+  },
+
   help: {
     head: "Команды",
     cmds: [
       ["whoami", "полная история"],
       ["greentext", "флагманский продукт"],
       ["projects", "всё, что выпущено"],
+      ["apps", "все приложения со ссылками"],
       ["experience", "карьера в разработке"],
       ["skills", "стек и AI-native инжиниринг"],
       ["cv", "скачать CV"],
