@@ -37,6 +37,7 @@
 <ul>
   <li>From scratch to release: one manager handles 150–200 clients a month instead of 25–30; revenue grew from 3M to 8M RUB/month with no significant new costs. <a href="https://20-mm.ru">20-mm.ru</a></li>
   <li>Quote in 15 minutes instead of 3–4 hours, stone selections from a photo in 10 minutes instead of 4–5 hours, contract and production documents in 20 minutes instead of 2–3 hours.</li>
+  <li>AI boundaries live in code, not in the prompt: the model only reads drawings and phrases text, money is computed by a deterministic engine; timeout, schema validation, a monthly spending cap; 150+ Playwright scenarios follow the same path a user takes.</li>
   <li>Next.js · TypeScript · PostgreSQL · Go · Flutter · MCP · Playwright; team — 1 engineer + AI agents on Claude Fable 5.</li>
 </ul>
 <h3>Greentext AI Inc. (Delaware C-corp)</h3>
@@ -47,6 +48,7 @@
   <li><b>Erlesen — Kurzgeschichten</b> — short-story reader for the German market: audio, offline library, subscriptions. <a href="https://www.erlesen.swiss/">erlesen.swiss</a> · <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a> · <a href="https://play.google.com/store/apps/details?id=it.app.erlesen">Google Play</a></li>
   <li><b>AI Clean Up</b> — iOS photo cleaner: similar and blurry photos (perceptual hash, Apple Vision), native screens via Swift. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></li>
   <li><b>JewBuzz Love</b> — dating, 10K+ MAU: real-time chats, map, roulette, blind dates. <a href="https://apps.apple.com/us/app/jewbuzz-love/id6446214897">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></li>
+  <li><b>How I work with AI agents</b> (following Anthropic’s guidance): contract tests are written before the code and the agent first confirms they fail; context comes from CLAUDE.md rules and a code graph over MCP; the agent never sees production keys and commits under its own git author, so every change is traceable and revertible.</li>
 </ul>
 <h3>Games</h3>
 <div class="when">Flutter Developer · 2021 - 2025</div>
@@ -59,11 +61,13 @@
 <div class="when">Flutter Developer · Feb 2023 - Jun 2024</div>
 <ul>
   <li>4 client apps on ERP-Aurora, a WebView browser for signing in to group companies’ accounts; offline-first for legacy Android devices, specs and releases.</li>
+  <li>Team of 2 Flutter developers, company of 20+ employees; wrote specs and aligned them with backend developers.</li>
 </ul>
 <h3>Dolinger — food delivery mobile app</h3>
 <div class="when">Flutter Developer · May 2022 - Jan 2023</div>
 <ul>
   <li>70+ client apps: maps and payment SDKs, push and deep links, store publishing; introduced a Contribution Guide and Gitflow.</li>
+  <li>Team of 2 Flutter developers; created and adapted the app for new clients, aligned JSON payload contracts.</li>
 </ul>
 <h2>Skills</h2>
 <p>Flutter · Dart · Bloc · Riverpod · Clean Architecture · Swift · Kotlin · TypeScript · React · Next.js · Go · PostgreSQL · Redis · Firebase · Stripe · In-App Purchase · Docker · CI/CD · Playwright · Unit / Widget / Integration tests · Figma · Claude Code · MCP</p>
