@@ -163,16 +163,12 @@ window.LOCALES.en = {
 
   cv: {
     head: "Download CV",
-    lead: "Flutter Developer · Full-Stack Product Engineer · AI-first Builder. Pick a language:",
+    lead: "Flutter Developer · Full-Stack Product Engineer · AI-first Builder. Pick a version:",
     items: [
-      { name: "CV — English", sub: "PDF", desc: "Flutter / full-stack CV, US format.", href: "cv/Peter_Parker_CV_US.pdf" },
-      { name: "CV — Русский", sub: "PDF", desc: "Резюме на русском.", href: "cv/Peter_Parker_CV_RU.pdf" },
-      { name: "CV — Español", sub: "PDF", desc: "CV en español.", href: "cv/Peter_Parker_CV_ES.pdf" },
-      { name: "CV — short, English", sub: "PDF", desc: "One page, the highlights.", href: "cv/Peter_Parker_CV_Short_US.pdf" },
-      { name: "CV — коротко, Русский", sub: "PDF", desc: "Одна страница: самое сильное.", href: "cv/Peter_Parker_CV_Short_RU.pdf" },
-      { name: "CV — breve, Español", sub: "PDF", desc: "Una página, lo esencial.", href: "cv/Peter_Parker_CV_Short_ES.pdf" },
+      { name: "CV (eng) short version, highlights", sub: "PDF", desc: "One page: highlights.", href: "cv/Peter_Parker_CV_Short_US.pdf" },
+      { name: "CV (eng) full version", sub: "PDF", desc: "All experience, projects and stack in detail.", href: "cv/Peter_Parker_CV_US.pdf" },
     ],
-    btn1: "Download CV (EN) ↗",
+    btn1: "Download CV (eng) ↗",
   },
 
   contact: {

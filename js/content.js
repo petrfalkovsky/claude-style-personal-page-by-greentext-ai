@@ -191,7 +191,7 @@
     wrap.appendChild(el("div", "spacer"));
     wrap.appendChild(productTable(T.cv.items));
     const go = el("div", "go-row");
-    go.appendChild(goButton("cv/Peter_Parker_CV_US.pdf", T.cv.btn1));
+    go.appendChild(goButton(T.cv.items[0].href, T.cv.btn1));
     wrap.appendChild(go);
     return wrap;
   }
