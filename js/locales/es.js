@@ -183,7 +183,7 @@ window.LOCALES.es = {
       ["whatsapp", `<a href="{whatsapp}" target="_blank" rel="noopener noreferrer">+54 11 2766-7104 ↗</a>`],
       ["sitio", `<a href="{greentext}" target="_blank" rel="noopener noreferrer">greentext.ai ↗</a>`],
       ["ubicación", "<b>Buenos Aires, Argentina</b> · remoto"],
-      ["idiomas", "Ruso (nativo) · Inglés (B2+) · Español (B1+)"],
+      ["idiomas", "Español (castellano, B1) · Ruso · de oído: ucraniano, bielorruso, inglés, portugués, italiano"],
     ],
   },
 

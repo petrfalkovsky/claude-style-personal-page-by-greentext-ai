@@ -183,7 +183,7 @@ window.LOCALES.en = {
       ["whatsapp", `<a href="{whatsapp}" target="_blank" rel="noopener noreferrer">+54 11 2766-7104 ↗</a>`],
       ["site", `<a href="{greentext}" target="_blank" rel="noopener noreferrer">greentext.ai ↗</a>`],
       ["based", "<b>Buenos Aires, Argentina</b> · remote"],
-      ["languages", "Russian (native) · English (B2+) · Spanish (B1+)"],
+      ["languages", "Spanish (Castellano, B1) · Russian · by ear: Ukrainian, Belarusian, English, Portuguese, Italian"],
     ],
   },
 
