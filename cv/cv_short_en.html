@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <title>Peter Parker — CV, short (EN)</title>
 <style>
-  @page { size: A4; margin: 8mm 12mm; }
+  @page { size: A4; margin: 9mm 13mm; }
   * { box-sizing: border-box; }
-  body { font-family: "Times New Roman", Times, serif; font-size: 9.2pt; color: #000; line-height: 1.2; margin: 0; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 9.6pt; color: #000; line-height: 1.25; margin: 0; }
   h1 { font-size: 13pt; text-align: center; margin: 0; }
   .role { text-align: center; font-style: italic; margin: 1pt 0 1pt; }
   .contacts { text-align: center; font-size: 9pt; margin-bottom: 5pt; }
@@ -35,31 +35,11 @@
   <a href="https://github.com/petrfalkovsky">github.com/petrfalkovsky</a> ∙
   <a href="https://peter.greentext.ai">peter.greentext.ai</a>
 </div>
-<p class="summary">Hi! I’m a product engineer with 6+ years of experience: I design interfaces and take them all the way to production code in Flutter, TypeScript and React. I currently work as a UX Expert at Mercado Pago, where I’m responsible for the design system, accessibility and performance. I ship mobile apps to the App Store and Google Play: from a 4M MAU game (Grand Mobile) to a $1.2M MRR product where I led the team (Walter Writes AI — mobile). I build AI products end to end, from backend and ML to payments and growth: my own SaaS with paying users and a custom standalone ML model, and a CRM for stone fabrication that lets a manager be up to 5x more productive.</p>
-<div class="aicols">
-<div>
-<p class="summary aihead">How I use AI models:</p>
+<p class="summary">Hi! I’m a product engineer with 6+ years of experience: I design interfaces and take them all the way to production code in Flutter, TypeScript and React. I currently work as a UX Expert at Mercado Pago, where I’m responsible for the design system, accessibility and performance. I ship mobile apps to the App Store and Google Play: from a 4M MAU game (Grand Mobile) to a $1.2M MRR product where I led the team (Walter Writes AI — mobile). I build AI products end to end, from backend and ML to payments and growth:</p>
 <ul class="ai">
-  <li>I pick the model for the task and know the strengths of each version</li>
-  <li>I know the limits of the context window and how to manage it</li>
-  <li>I connect models to knowledge bases and documents and work correctly with external sources</li>
-  <li>I use semantic search and project indexing</li>
-  <li>I know how to cut latency, cost and resource usage</li>
+  <li>a service for US students that helps their written work pass checks for AI-generated text; it has paying users and its own standalone ML model</li>
+  <li>an ERP system for stone fabrication that raised a line manager’s output from 25 to 120–150 turnkey orders a month</li>
 </ul>
-</div>
-<div>
-<p class="summary aihead">Simple rules I follow:</p>
-<ul class="ai">
-  <li>I dictate prompts by voice — that way the model gets more context</li>
-  <li>I describe the result and acceptance criteria first, then the task itself</li>
-  <li>I use a master agent that walks the task from stage to stage</li>
-  <li>I ask for data to back up any result the model produces</li>
-  <li>any repeated action becomes a skill that runs at the right stage</li>
-  <li>several background agents are always working while I’m busy with other things</li>
-  <li>I keep a shared meta-context, for example as a handoff, so new sessions start with what’s already known</li>
-</ul>
-</div>
-</div>
 <p class="summary">I’ve worked in teams from 2 to 50+ people, on offline mode and releases for B2B (TN-GROUP, Dolinger). When I lived in Saint Petersburg, I ran businesses: an on-site smartphone repair company, a sales department and franchise packaging, used-car selection and inspection, a coffee shop on Sennaya Square. I live in Buenos Aires, speak Spanish (Castellano, B1) and Russian, and understand Ukrainian, Belarusian, English, Portuguese and Italian by ear. I have a cat.</p>
 <h2>Experience</h2>
 <h3>AI roll-up of 20mm — ERP system</h3>
@@ -67,6 +47,7 @@
 <ul>
   <li>From scratch to release: one manager handles 150–200 clients a month instead of 25–30; revenue grew from 3M to 8M RUB/month with no significant new costs. <a href="https://20-mm.ru">20-mm.ru</a></li>
   <li>Quote in 15 minutes instead of 3–4 hours, stone selections from a photo in 10 minutes instead of 4–5 hours, contract and production documents in 20 minutes instead of 2–3 hours.</li>
+  <li>AI boundaries live in code, not in the prompt: the model only reads drawings and phrases text, money is computed by a deterministic engine; timeout, schema validation, a monthly spending cap; 150+ Playwright scenarios follow the same path a user takes.</li>
 </ul>
 <h3>Greentext AI Inc. (Delaware C-corp)</h3>
 <div class="when">Founder, Lead Flutter Developer · Mar 2025 - present</div>
@@ -76,6 +57,7 @@
   <li><b>Erlesen — Kurzgeschichten</b> — short-story reader for the German market: audio, offline library, subscriptions. <a href="https://www.erlesen.swiss/">erlesen.swiss</a> · <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a> · <a href="https://play.google.com/store/apps/details?id=it.app.erlesen">Google Play</a></li>
   <li><b>AI Clean Up</b> — iOS photo cleaner: similar and blurry photos (perceptual hash, Apple Vision), native screens via Swift. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></li>
   <li><b>JewBuzz Love</b> — dating, 10K+ MAU: real-time chats, map, roulette, blind dates. <a href="https://apps.apple.com/us/app/jewbuzz-love/id6446214897">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></li>
+  <li><b>How I work with AI agents</b> (following Anthropic’s guidance): contract tests are written before the code and the agent first confirms they fail; context comes from CLAUDE.md rules and a code graph over MCP; the agent never sees production keys and commits under its own git author, so every change is traceable and revertible.</li>
 </ul>
 <h3>Games</h3>
 <div class="when">Flutter Developer · 2021 - 2025</div>
@@ -88,11 +70,13 @@
 <div class="when">Flutter Developer · Feb 2023 - Jun 2024</div>
 <ul>
   <li>4 client apps on ERP-Aurora, a WebView browser for signing in to group companies’ accounts; offline-first for legacy Android devices, specs and releases.</li>
+  <li>Team of 2 Flutter developers, company of 20+ employees; wrote specs and aligned them with backend developers.</li>
 </ul>
 <h3>Dolinger — food delivery mobile app</h3>
 <div class="when">Flutter Developer · May 2022 - Jan 2023</div>
 <ul>
   <li>70+ client apps: maps and payment SDKs, push and deep links, store publishing; introduced a Contribution Guide and Gitflow.</li>
+  <li>Team of 2 Flutter developers; created and adapted the app for new clients, aligned JSON payload contracts.</li>
 </ul>
 <h2>Skills</h2>
 <p>Flutter · Dart · Bloc · Riverpod · Clean Architecture · Swift · Kotlin · TypeScript · React · Next.js · Go · PostgreSQL · Redis · Firebase · Stripe · In-App Purchase · Docker · CI/CD · Playwright · Unit / Widget / Integration tests · Figma · Claude Code · MCP</p>
