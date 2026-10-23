@@ -6,7 +6,7 @@
 <style>
   @page { size: A4; margin: 9mm 13mm; }
   * { box-sizing: border-box; }
-  body { font-family: "Times New Roman", Times, serif; font-size: 9.5pt; color: #000; line-height: 1.23; margin: 0; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 9.3pt; color: #000; line-height: 1.21; margin: 0; }
   h1 { font-size: 13pt; text-align: center; margin: 0; }
   .role { text-align: center; font-style: italic; margin: 1pt 0 1pt; }
   .contacts { text-align: center; font-size: 9pt; margin-bottom: 5pt; }
@@ -47,17 +47,17 @@
 <ul>
   <li>De cero al lanzamiento: un gestor atiende 150–200 clientes al mes en lugar de 25–30; la facturación creció de 3 a 8 M RUB/mes sin gastos significativos. <a href="https://20-mm.ru">20-mm.ru</a></li>
   <li>Presupuesto en 15 minutos en lugar de 3–4 horas, selección de piedras por foto en 10 minutos en lugar de 4–5 horas, contrato y documentos para producción en 20 minutos en lugar de 2–3 horas.</li>
-  <li>Los límites de la IA los impone el código, no el prompt: el modelo solo lee el plano y redacta, el dinero lo calcula un motor determinista; timeout, validación por esquema, tope mensual de gasto; más de 150 escenarios de Playwright siguen el mismo camino que el usuario.</li>
+  <li>Se creó un editor de planos completo con visualización 2D y 3D, edición del plano por comandos de voz a través de un asistente adicional sobre DeepSeek, y exportación DXF directa a producción con presupuesto automático para el cliente.</li>
 </ul>
 <h3>Greentext AI Inc. (Delaware C-corp)</h3>
 <div class="when">Founder, Lead Flutter Developer · mar 2025 — actualidad</div>
 <ul>
-  <li><b>Greentext AI</b> — mi propio SaaS con usuarios de pago: Flutter (Web, iOS, Android) + Go + modelo ML propio (RoBERTa), Stripe. <a href="https://app.greentext.ai/">app.greentext.ai</a></li>
+  <li><b>Greentext AI</b> — una herramienta para estudiantes de EE. UU. para revisar ensayos y humanizar texto de IA: Flutter (Web, iOS, Android) + Go + modelo ML propio (RoBERTa), Stripe. <a href="https://app.greentext.ai/">app.greentext.ai</a></li>
   <li><b>Walter Writes AI</b> — humanizador con IA para Walter IA Inc. (EE. UU.), $1.2M MRR: lideré el desarrollo desde cero, armé un equipo de 3 desarrolladores. <a href="https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.walterwrites">Google Play</a></li>
   <li><b>Erlesen — Kurzgeschichten</b> — lector de cuentos para el mercado alemán: audio, biblioteca offline, suscripciones. <a href="https://www.erlesen.swiss/">erlesen.swiss</a> · <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a> · <a href="https://play.google.com/store/apps/details?id=it.app.erlesen">Google Play</a></li>
   <li><b>AI Clean Up</b> — limpieza de galería en iOS: fotos similares y borrosas (perceptual hash, Apple Vision), pantallas nativas en Swift. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></li>
   <li><b>JewBuzz Love</b> — app de citas, más de 10K MAU: chats en tiempo real, mapa, ruleta, citas a ciegas. <a href="https://apps.apple.com/us/app/jewbuzz-love/id6446214897">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></li>
-  <li><b>Cómo trabajo con agentes de IA</b> (según las recomendaciones de Anthropic): los tests de contrato se escriben antes que el código y el agente primero confirma que fallan; el contexto viene de reglas en CLAUDE.md y un grafo del código vía MCP; el agente no ve las claves de producción y hace commits con su propio autor de git, así cada cambio es trazable y reversible.</li>
+  <li><b>Cómo trabajo con agentes de IA:</b> 1) dicto la tarea por voz para darle más contexto al modelo; 2) primero describo el resultado y el criterio de aceptación, después la tarea; 3) un agente maestro lleva la tarea por etapas, con agentes en paralelo; 4) todo resultado del modelo se respalda con datos; 5) las acciones repetidas se vuelven skills que se ejecutan en la etapa correcta; 6) un meta-contexto común (handoff) lleva el conocimiento a las sesiones nuevas. Elijo el modelo según la tarea, gestiono la ventana de contexto, conecto bases de conocimiento y búsqueda semántica, y reduzco latencia y costo.</li>
 </ul>
 <h3>Juegos</h3>
 <div class="when">Flutter Developer · 2021 — 2025</div>

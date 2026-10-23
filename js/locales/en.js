@@ -47,7 +47,7 @@ window.LOCALES.en = {
 
   greentext: {
     head: "Greentext AI",
-    lead: "Greentext AI is an AI text humanizer &amp; detector — a live SaaS with paying users, built and operated end to end by one engineer. I researched the market, incorporated in Delaware, opened banking, built the product across mobile, web, backend and ML, and run growth myself. One application on Flutter covers Web, iOS and Android from a single codebase.",
+    lead: "Greentext AI is an AI text humanizer &amp; detector — a live product with paying users, built and operated end to end by one engineer. I researched the market, incorporated in Delaware, opened banking, built the product across mobile, web, backend and ML, and run growth myself. One application on Flutter covers Web, iOS and Android from a single codebase.",
     kv: [
       ["product", "Flutter Web + iOS + Android: Google / Apple / email auth, Cloudflare Turnstile, subscription tiers, full-screen editors, admin panel."],
       ["backend", "Go: REST API, PostgreSQL, Redis, migrations, rate limiting, trial mechanics with escalating cooldowns, anti-abuse device fingerprinting."],
@@ -306,7 +306,7 @@ window.LOCALES.en = {
       {
         "name": "Greentext AI",
         "lines": [
-          "My own SaaS: AI text humanizer and detector, Flutter (Web, iOS, Android) + Go + custom ML model."
+          "A tool for US students to check essays and humanize AI text: AI text humanizer and detector, Flutter (Web, iOS, Android) + Go + custom ML model."
         ],
         "links": [
           [

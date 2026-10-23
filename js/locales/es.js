@@ -47,7 +47,7 @@ window.LOCALES.es = {
 
   greentext: {
     head: "Greentext AI",
-    lead: "Greentext AI es un humanizador y detector de texto con IA — un SaaS en producción con usuarios de pago, construido y operado de principio a fin por un solo ingeniero. Investigué el mercado, constituí la empresa en Delaware, abrí la cuenta bancaria, construí el producto en móvil, web, backend y ML, y llevo el growth yo mismo. Una sola aplicación en Flutter cubre Web, iOS y Android desde una única base de código.",
+    lead: "Greentext AI es un humanizador y detector de texto con IA — un producto en producción con usuarios de pago, construido y operado de principio a fin por un solo ingeniero. Investigué el mercado, constituí la empresa en Delaware, abrí la cuenta bancaria, construí el producto en móvil, web, backend y ML, y llevo el growth yo mismo. Una sola aplicación en Flutter cubre Web, iOS y Android desde una única base de código.",
     kv: [
       ["producto", "Flutter Web + iOS + Android: acceso con Google / Apple / email, Cloudflare Turnstile, planes de suscripción, editores a pantalla completa, panel de administración."],
       ["backend", "Go: REST API, PostgreSQL, Redis, migraciones, rate limiting, mecánica de prueba con cooldowns crecientes, fingerprinting de dispositivos anti-abuso."],
@@ -306,7 +306,7 @@ window.LOCALES.es = {
       {
         "name": "Greentext AI",
         "lines": [
-          "Mi propio SaaS: humanizador y detector de texto con IA, Flutter (Web, iOS, Android) + Go + modelo ML propio."
+          "Una herramienta para estudiantes de EE. UU. para revisar ensayos y humanizar texto de IA: humanizador y detector de texto con IA, Flutter (Web, iOS, Android) + Go + modelo ML propio."
         ],
         "links": [
           [

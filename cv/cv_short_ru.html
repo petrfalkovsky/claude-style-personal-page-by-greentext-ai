@@ -6,7 +6,7 @@
 <style>
   @page { size: A4; margin: 9mm 13mm; }
   * { box-sizing: border-box; }
-  body { font-family: "Times New Roman", Times, serif; font-size: 9.3pt; color: #000; line-height: 1.22; margin: 0; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 9.2pt; color: #000; line-height: 1.21; margin: 0; }
   h1 { font-size: 13pt; text-align: center; margin: 0; }
   .role { text-align: center; font-style: italic; margin: 1pt 0 1pt; }
   .contacts { text-align: center; font-size: 9pt; margin-bottom: 5pt; }
@@ -47,17 +47,17 @@
 <ul>
   <li>С нуля до релиза: менеджер ведёт 150–200 клиентов в месяц вместо 25–30; выручка выросла с 3 до 8 млн ₽/мес без значимых расходов. <a href="https://20-mm.ru">20-mm.ru</a></li>
   <li>КП за 15 минут вместо 3–4 часов, подборки камня по фото за 10 минут вместо 4–5 часов, договор и документы в производство за 20 минут вместо 2–3 часов.</li>
-  <li>Границы AI держит код, а не промпт: модель только читает чертёж и формулирует, деньги считает детерминированный движок; таймаут, проверка ответа по схеме, месячный потолок расходов; 150+ Playwright-сценариев идут тем же путём, что пользователь.</li>
+  <li>Создан полноценный редактор чертежей, 2D- и 3D-визуализация, правки чертежа голосовыми командами через дополнительного ассистента на DeepSeek, с возможностью экспорта DXF сразу на производство с автоматической сметой для клиента.</li>
 </ul>
 <h3>Greentext AI Inc. (Delaware C-corp)</h3>
 <div class="when">Founder, Lead Flutter Developer · март 2025 — сейчас</div>
 <ul>
-  <li><b>Greentext AI</b> — свой SaaS с платящими пользователями: Flutter (Web, iOS, Android) + Go + своя ML-модель (RoBERTa), Stripe. <a href="https://app.greentext.ai/">app.greentext.ai</a></li>
+  <li><b>Greentext AI</b> — инструмент для американских студентов для проверки эссе и очеловечивания AI-текста: Flutter (Web, iOS, Android) + Go + своя ML-модель (RoBERTa), Stripe. <a href="https://app.greentext.ai/">app.greentext.ai</a></li>
   <li><b>Walter Writes AI</b> — AI-гуманизатор для Walter IA Inc. (США), $1.2M MRR: вёл разработку с нуля, собрал команду из 3 разработчиков. <a href="https://apps.apple.com/us/app/walter-writes-ai-humanizer/id6757705138">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.walterwrites">Google Play</a></li>
   <li><b>Erlesen — Kurzgeschichten</b> — читалка рассказов для немецкого рынка: аудио, offline-библиотека, подписки. <a href="https://www.erlesen.swiss/">erlesen.swiss</a> · <a href="https://apps.apple.com/de/app/erlesen-kurzgeschichten/id6758106904">App Store</a> · <a href="https://play.google.com/store/apps/details?id=it.app.erlesen">Google Play</a></li>
   <li><b>AI Clean Up</b> — очистка галереи iOS: похожие и размытые фото (perceptual hash, Apple Vision), нативные экраны через Swift. <a href="https://apps.apple.com/ar/app/ai-clean-up-phone-cleaner/id6754924948">App Store</a></li>
   <li><b>JewBuzz Love</b> — дейтинг, 10K+ MAU: чаты в реальном времени, карта, рулетка, слепые свидания. <a href="https://apps.apple.com/us/app/jewbuzz-love/id6446214897">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.it.jewbuzz_love">Google Play</a></li>
-  <li><b>Как работаю с AI-агентами</b> (по рекомендациям Anthropic): тесты по контракту пишутся раньше кода, и агент сначала подтверждает, что они падают; контекст — правила в CLAUDE.md и граф кода через MCP; агент не видит прод-ключей и коммитит от отдельного git-автора, поэтому любое изменение отслеживается и откатывается.</li>
+  <li><b>Как работаю с AI-агентами:</b> 1) задачу диктую голосом — так модель получает больше контекста; 2) сначала описываю результат и критерий приёмки, потом саму задачу; 3) мастер-агент ведёт задачу по этапам, фоновые агенты работают параллельно; 4) любой результат модели подтверждается данными; 5) повторяющиеся действия оформляю как скиллы и запускаю на нужном этапе; 6) общий мета-контекст (хэндофф) переносит знания в новые сессии. Модель выбираю под задачу, управляю контекстным окном, подключаю базы знаний и семантический поиск, снижаю задержки и стоимость.</li>
 </ul>
 <h3>Игры</h3>
 <div class="when">Flutter Developer · 2021 — 2025</div>
