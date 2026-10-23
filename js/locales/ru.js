@@ -117,7 +117,7 @@ window.LOCALES.ru = {
         note: "Поддерживал 70+ приложений; интеграции платёжных и картографических SDK; Firebase messaging, диплинки; внедрил Contribution Guide и Gitflow; релизы в App Store / Google Play." },
       { mono: "⌥", when: "янв 2021 — июн 2024", meta: "github.com/petrfalkovsky",
         role: "<b>Flutter-разработчик</b> · Open source и контрактная работа",
-        note: "Gapopa messenger (опенсорс) · Kaif Games (Дубай): 12 игровых интерфейсов, platform channels · Laskino Park (iOS-приложение ЖК) · VIBE GAMES (Казахстан) · Toxicity · Athina Plus." },
+        note: "Gapopa messenger (опенсорс) · Kaif Games (Дубай): система дизайна под все пропорции телефонов и планшетов, обкатана на 12 интерфейсах, platform channels · Laskino Park (iOS-приложение ЖК) · VIBE GAMES (Казахстан) · Toxicity · Athina Plus." },
     ],
     beforeHead: "До кода — предпринимательское десятилетие",
     beforeKv: [
@@ -278,7 +278,7 @@ window.LOCALES.ru = {
       {
         "name": "РУСЬ МОБАЙЛ: RP Онлайн ГТА",
         "lines": [
-          "Мобильная RP-игра Kaif Games (Дубай); создал и подключил 12 интерфейсов."
+          "Мобильная RP-игра Kaif Games (Дубай); создал систему дизайна, чтобы на всех пропорциях планшетов и телефонов игровой интерфейс выглядел идеально, обкатал её на 12 подключённых интерфейсах."
         ],
         "links": [
           [

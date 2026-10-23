@@ -117,7 +117,7 @@ window.LOCALES.es = {
         note: "Mantuve 70+ apps; integraciones de SDK de pagos y mapas; Firebase messaging, deeplinks; introduje una Contribution Guide y Gitflow; publicaciones en App Store / Google Play." },
       { mono: "⌥", when: "ene 2021 — jun 2024", meta: "github.com/petrfalkovsky",
         role: "<b>Desarrollador Flutter</b> · Open source y trabajo por contrato",
-        note: "Gapopa messenger (open source) · Kaif Games (Dubái): 12 interfaces de juego, platform channels · Laskino Park (app residencial iOS) · VIBE GAMES (Kazajistán) · Toxicity · Athina Plus." },
+        note: "Gapopa messenger (open source) · Kaif Games (Dubái): sistema de diseño para todas las proporciones de teléfonos y tablets, probado en 12 interfaces, platform channels · Laskino Park (app residencial iOS) · VIBE GAMES (Kazajistán) · Toxicity · Athina Plus." },
     ],
     beforeHead: "Antes del código — la década emprendedora",
     beforeKv: [
@@ -278,7 +278,7 @@ window.LOCALES.es = {
       {
         "name": "Rus Mobile: RP Online",
         "lines": [
-          "Juego RP móvil de Kaif Games (Dubái); creé y conecté 12 interfaces."
+          "Juego RP móvil de Kaif Games (Dubái); creé un sistema de diseño para que la interfaz del juego se vea perfecta en todas las proporciones de teléfonos y tablets, y lo probé en 12 interfaces conectadas."
         ],
         "links": [
           [
