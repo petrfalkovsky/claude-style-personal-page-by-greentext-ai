@@ -82,9 +82,6 @@ window.LOCALES.en = {
     head: "Engineering career",
     current: "current",
     items: [
-      { mono: "M", current: true, when: "Jul 2025 — now", meta: "mercadolibre.com · Buenos Aires",
-        role: "<b>UX Expert - Software</b> · Mercado Pago (MercadoLibre) — e-commerce & fintech in LatAm",
-        note: "Product and interaction design of Mercado Pago payment and profile flows, turned into stable production code: design-system components in HTML, CSS, TypeScript and component frameworks (React, Flutter), with accessibility and performance as acceptance criteria. Generative AI in the design → code loop: generating interface variants from design tokens, AI review of layouts against design and a11y, generated UI tests. Built and evaluated agentic workflows — context, tools, instructions, safety boundaries — for internal seller tools and the courier logistics app.", tag: "current" },
       { mono: "G", current: true, when: "2026 — now", meta: "greentext.ai",
         role: "<b>Founder / Solo Engineer</b> · Greentext AI",
         note: "AI text humanizer & detector. Built and operate the entire stack: Flutter apps, Go backend, Next.js SEO site, custom ML detector, Stripe billing, AWS infra, growth analytics. Live product with paying users.", tag: "current" },

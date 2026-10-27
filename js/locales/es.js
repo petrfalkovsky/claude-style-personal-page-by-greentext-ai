@@ -82,9 +82,6 @@ window.LOCALES.es = {
     head: "Carrera en ingeniería",
     current: "actual",
     items: [
-      { mono: "M", current: true, when: "jul 2025 — ahora", meta: "mercadolibre.com · Buenos Aires",
-        role: "<b>UX Expert - Software</b> · Mercado Pago (MercadoLibre) — e-commerce y fintech de LatAm",
-        note: "Diseño de producto y de interacción de los flujos de pagos y perfil de Mercado Pago, llevado a código de producción estable: componentes del sistema de diseño en HTML, CSS, TypeScript y frameworks de componentes (React, Flutter), con accesibilidad y rendimiento como criterios de aceptación. IA generativa en el ciclo diseño → código: variantes de interfaz a partir de design tokens, revisión con IA de la maquetación frente al diseño y a11y, tests de UI generados. Configuré y evalué flujos agénticos —contexto, herramientas, instrucciones, límites de seguridad— para herramientas internas de sellers y la app de logística para repartidores.", tag: "actual" },
       { mono: "G", current: true, when: "2026 — ahora", meta: "greentext.ai",
         role: "<b>Founder / Solo Engineer</b> · Greentext AI",
         note: "Humanizador y detector de texto con IA. Construí y opero todo el stack: apps Flutter, backend en Go, sitio SEO en Next.js, detector ML propio, facturación con Stripe, infraestructura AWS, analítica de growth. Producto en producción con usuarios de pago.", tag: "actual" },
