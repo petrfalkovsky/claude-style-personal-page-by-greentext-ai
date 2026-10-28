@@ -14,7 +14,7 @@ window.LOCALES.es = {
       ["rol", "<b>Founder / Solo Engineer</b> · Flutter Developer · ingeniero AI-first"],
       ["construyo", "<b>Greentext AI</b> — humanizador y detector de texto con IA, en producción y con usuarios de pago"],
       ["stack", "Flutter · Go · Next.js · Swift · Kotlin · Java · PyTorch"],
-      ["ubicación", "Buenos Aires, Argentina · trabajo con empresas de EE. UU. a través de mi propia C-corp de Delaware"],
+      ["ubicación", "Buenos Aires, Argentina · trabajo con empresas de EE. UU. a través de mi propia empresa en EE. UU."],
       ["antes", "un camino muy largo: entrenador de culturismo → finanzas → SEO → 8 negocios → código"],
       ["github", `<a href="{github}" target="_blank" rel="noopener noreferrer">github.com/petrfalkovsky ↗</a>`],
       ["sitio", `<a href="{greentext}" target="_blank" rel="noopener noreferrer">greentext.ai ↗</a>`],
@@ -37,7 +37,7 @@ window.LOCALES.es = {
     stats: [
       { v: "6+ años", l: "en ingeniería de software" },
       { v: "10+", l: "negocios fundados antes del código" },
-      { v: "1", l: "C-corp de Delaware (Greentext AI)" },
+      { v: "1", l: "empresa en EE. UU. (Greentext AI Inc.)" },
       { v: "4M MAU", l: "el producto más grande" },
       { v: "$1.2M MRR", l: "Walter Writes — lead de desarrollo" },
       { v: "1", l: "gato — Vaska" },
@@ -47,7 +47,7 @@ window.LOCALES.es = {
 
   greentext: {
     head: "Greentext AI",
-    lead: "Greentext AI es un humanizador y detector de texto con IA — un producto en producción con usuarios de pago, construido y operado de principio a fin por un solo ingeniero. Investigué el mercado, constituí la empresa en Delaware, abrí la cuenta bancaria, construí el producto en móvil, web, backend y ML, y llevo el growth yo mismo. Una sola aplicación en Flutter cubre Web, iOS y Android desde una única base de código.",
+    lead: "Greentext AI es un humanizador y detector de texto con IA — un producto en producción con usuarios de pago, construido y operado de principio a fin por un solo ingeniero. Investigué el mercado, constituí la empresa en EE. UU., abrí la cuenta bancaria, construí el producto en móvil, web, backend y ML, y llevo el growth yo mismo. Una sola aplicación en Flutter cubre Web, iOS y Android desde una única base de código.",
     kv: [
       ["producto", "Flutter Web + iOS + Android: acceso con Google / Apple / email, Cloudflare Turnstile, planes de suscripción, editores a pantalla completa, panel de administración."],
       ["backend", "Go: REST API, PostgreSQL, Redis, migraciones, rate limiting, mecánica de prueba con cooldowns crecientes, fingerprinting de dispositivos anti-abuso."],
@@ -55,7 +55,7 @@ window.LOCALES.es = {
       ["facturación", "Stripe: suscripciones, excedente de palabras medido, webhooks, idempotencia, conversiones server-side; merchant-of-record de respaldo conmutable por configuración."],
       ["growth", "Sitio SEO en Next.js + una fábrica de 1.500+ landing pages programáticas (5 layouts hero × 12 paletas, personalizadas por utm_term de Google Ads). GA4 + GTM + Measurement Protocol, atribución gclid/UTM de extremo a extremo, del clic a la compra."],
       ["infra", "AWS EC2, Docker Compose, GitHub Actions CI/CD (staging + prod), Cloudflare, email transaccional, Sentry, dashboards de administración (embudos, MRR, saldos de API)."],
-      ["empresa", "C-corp de Delaware en EE. UU., banca de empresa, listo para trabajar directamente con clientes y socios estadounidenses."],
+      ["empresa", "Empresa en EE. UU., banca de empresa, listo para trabajar directamente con clientes y socios estadounidenses."],
     ],
     btn: "Visitar greentext.ai ↗",
   },
@@ -169,7 +169,7 @@ window.LOCALES.es = {
   },
 
   contact: {
-    lead: "Construyo Greentext AI. Abierto a empresas de EE. UU. (a través de mi propia C-corp de Delaware), inversores, socios y trabajo Flutter / full-stack interesante.",
+    lead: "Construyo Greentext AI. Abierto a empresas de EE. UU. (a través de mi propia empresa en EE. UU.), inversores, socios y trabajo Flutter / full-stack interesante.",
     kv: [
       ["email", `<a href="mailto:{email}">{email}</a>`],
       ["github", `<a href="{github}" target="_blank" rel="noopener noreferrer">github.com/petrfalkovsky ↗</a>`],

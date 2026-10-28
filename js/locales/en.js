@@ -14,7 +14,7 @@ window.LOCALES.en = {
       ["role", "<b>Founder / Solo Engineer</b> · Flutter Developer · AI-first engineer"],
       ["building", "<b>Greentext AI</b> — AI text humanizer &amp; detector, live with paying users"],
       ["stack", "Flutter · Go · Next.js · Swift · Kotlin · Java · PyTorch"],
-      ["based", "Buenos Aires, Argentina · works with US companies via own Delaware C-corp"],
+      ["based", "Buenos Aires, Argentina · works with US companies via my own US company"],
       ["before", "a very long road: bodybuilding coach → finance → SEO → 8 businesses → code"],
       ["github", `<a href="{github}" target="_blank" rel="noopener noreferrer">github.com/petrfalkovsky ↗</a>`],
       ["site", `<a href="{greentext}" target="_blank" rel="noopener noreferrer">greentext.ai ↗</a>`],
@@ -37,7 +37,7 @@ window.LOCALES.en = {
     stats: [
       { v: "6+ yrs", l: "in software engineering" },
       { v: "10+", l: "businesses founded before code" },
-      { v: "1", l: "Delaware C-corp (Greentext AI)" },
+      { v: "1", l: "US company (Greentext AI Inc.)" },
       { v: "4M MAU", l: "biggest product shipped to" },
       { v: "$1.2M MRR", l: "Walter Writes — dev lead" },
       { v: "1", l: "cat — Vaska" },
@@ -47,7 +47,7 @@ window.LOCALES.en = {
 
   greentext: {
     head: "Greentext AI",
-    lead: "Greentext AI is an AI text humanizer &amp; detector — a live product with paying users, built and operated end to end by one engineer. I researched the market, incorporated in Delaware, opened banking, built the product across mobile, web, backend and ML, and run growth myself. One application on Flutter covers Web, iOS and Android from a single codebase.",
+    lead: "Greentext AI is an AI text humanizer &amp; detector — a live product with paying users, built and operated end to end by one engineer. I researched the market, incorporated in the US, opened banking, built the product across mobile, web, backend and ML, and run growth myself. One application on Flutter covers Web, iOS and Android from a single codebase.",
     kv: [
       ["product", "Flutter Web + iOS + Android: Google / Apple / email auth, Cloudflare Turnstile, subscription tiers, full-screen editors, admin panel."],
       ["backend", "Go: REST API, PostgreSQL, Redis, migrations, rate limiting, trial mechanics with escalating cooldowns, anti-abuse device fingerprinting."],
@@ -55,7 +55,7 @@ window.LOCALES.en = {
       ["billing", "Stripe: subscriptions, metered word overage, webhooks, idempotency, server-side conversions; backup merchant-of-record switchable via config."],
       ["growth", "Next.js SEO site + a factory of 1,500+ programmatic ad landing pages (5 hero layouts × 12 palettes, personalized by Google Ads utm_term). GA4 + GTM + Measurement Protocol, end-to-end gclid/UTM attribution from ad click to purchase."],
       ["infra", "AWS EC2, Docker Compose, GitHub Actions CI/CD (staging + prod), Cloudflare, transactional email, Sentry, admin dashboards (funnels, MRR, API balances)."],
-      ["company", "US Delaware C-corp, business banking, ready to work with US clients and partners directly."],
+      ["company", "US company, business banking, ready to work with US clients and partners directly."],
     ],
     btn: "Visit greentext.ai ↗",
   },
@@ -169,7 +169,7 @@ window.LOCALES.en = {
   },
 
   contact: {
-    lead: "Building Greentext AI. Open to US companies (via my own Delaware C-corp), investors, partners and interesting Flutter / full-stack work.",
+    lead: "Building Greentext AI. Open to US companies (via my own US company), investors, partners and interesting Flutter / full-stack work.",
     kv: [
       ["email", `<a href="mailto:{email}">{email}</a>`],
       ["github", `<a href="{github}" target="_blank" rel="noopener noreferrer">github.com/petrfalkovsky ↗</a>`],
