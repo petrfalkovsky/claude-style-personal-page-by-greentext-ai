@@ -160,7 +160,7 @@ window.LOCALES.ru = {
 
   cv: {
     head: "Скачать CV",
-    lead: "Flutter Developer · Full-Stack Product Engineer · AI-first Builder. Выбери версию:",
+    lead: "Mobile · Flutter Developer · AI-first разработка. Выбери версию:",
     items: [
       { name: "CV (rus) короткая версия, хайлайты", sub: "PDF", desc: "Одна страница: хайлайты.", href: "cv/Peter_Parker_CV_Short_RU.pdf" },
       { name: "CV (rus) полная версия", sub: "PDF", desc: "Весь опыт, проекты и стек подробно.", href: "cv/Peter_Parker_CV_RU.pdf" },

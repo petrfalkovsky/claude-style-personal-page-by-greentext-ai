@@ -160,7 +160,7 @@ window.LOCALES.en = {
 
   cv: {
     head: "Download CV",
-    lead: "Flutter Developer · Full-Stack Product Engineer · AI-first Builder. Pick a version:",
+    lead: "Mobile · Flutter Developer · AI-first development. Pick a version:",
     items: [
       { name: "CV (eng) short version, highlights", sub: "PDF", desc: "One page: highlights.", href: "cv/Peter_Parker_CV_Short_US.pdf" },
       { name: "CV (eng) full version", sub: "PDF", desc: "All experience, projects and stack in detail.", href: "cv/Peter_Parker_CV_US.pdf" },

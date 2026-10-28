@@ -160,7 +160,7 @@ window.LOCALES.es = {
 
   cv: {
     head: "Descargar CV",
-    lead: "Flutter Developer · Full-Stack Product Engineer · AI-first Builder. Elige una versión:",
+    lead: "Mobile · Flutter Developer · desarrollo AI-first. Elige una versión:",
     items: [
       { name: "CV (esp) versión corta, lo destacado", sub: "PDF", desc: "Una página: lo destacado.", href: "cv/Peter_Parker_CV_Short_ES.pdf" },
       { name: "CV (esp) versión completa", sub: "PDF", desc: "Toda la experiencia, proyectos y stack en detalle.", href: "cv/Peter_Parker_CV_ES.pdf" },
