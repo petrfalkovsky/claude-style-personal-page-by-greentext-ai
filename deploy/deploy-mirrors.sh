@@ -60,10 +60,13 @@ $( [ "$any" = yes ] && echo "  listen 80;" )
   error_log  /var/log/nginx/peter-site.error.log;
 
   # Проверка Let's Encrypt: файла нет здесь — он у соседа (второй A-адрес).
-  location /.well-known/acme-challenge/ {
+  # К соседу (сеть Tailscale) уходят только имена токенов LE, без путей:
+  # снаружи во внутреннюю сеть не должно проходить ничего другого.
+  location ~ "^/\.well-known/acme-challenge/[A-Za-z0-9_-]{20,128}\$" {
     root /srv/peter-site/acme;
     try_files \$uri @peer;
   }
+  location /.well-known/acme-challenge/ { return 404; }
   location @peer {
     if (\$http_x_acme_peer) { return 404; }
     proxy_set_header Host \$host;
